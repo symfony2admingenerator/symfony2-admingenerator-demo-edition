@@ -1,0 +1,19 @@
+AdmingeneratorDashboardDemoBundle:
+        resource: "@AdmingeneratorDashboardDemoBundle/Controller/"
+        type:     annotation
+        prefix:   /
+
+AdmingeneratorDoctrineOrmDemoBundle_Post:
+    resource: "@AdmingeneratorDoctrineOrmDemoBundle/Controller/Post/"
+    type:     admingenerator
+    prefix:   /doctrine-orm/post
+
+AdmingeneratorDoctrineOrmDemoBundle_Category:
+    resource: "@AdmingeneratorDoctrineOrmDemoBundle/Controller/Category/"
+    type:     admingenerator
+    prefix:   /doctrine-orm/category
+
+AdmingeneratorDoctrineOrmDemoBundle_Tag:
+    resource: "@AdmingeneratorDoctrineOrmDemoBundle/Controller/Tag/"
+    type:     admingenerator
+    prefix:   /doctrine-orm/tag

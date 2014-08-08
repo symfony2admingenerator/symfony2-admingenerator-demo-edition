@@ -1,0 +1,6 @@
+jms_di_extra:
+    locations:
+        all_bundles:  true
+#        bundles:      []
+        directories:  ["%kernel.root_dir%/../src"]
+     

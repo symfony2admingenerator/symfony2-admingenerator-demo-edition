@@ -1,0 +1,92 @@
+imports:
+    - { resource: parameters.yml }
+    - { resource: security.yml }
+
+    # S2A GeneratorBundle
+    - { resource: bundles/admingenerator_generator.yml }
+    - { resource: bundles/knp_menu.yml }
+    - { resource: bundles/jms_di_extra.yml }
+    - { resource: bundles/jms_security_extra.yml }
+    # S2A FormExtensionsBundle
+    - { resource: bundles/admingenerator_form_extensions.yml }
+    - { resource: bundles/liip_imagine.yml }
+    - { resource: bundles/vich_uploader.yml }
+    # S2A DemoBundle
+    - { resource: bundles/stof_doctrine_extensions.yml }
+
+framework:
+    #esi:             ~
+    translator:      { fallback: "%locale%" }
+    secret:          "%secret%"
+    router:
+        resource: "%kernel.root_dir%/config/routing.yml"
+        strict_requirements: ~
+    form:            ~
+    csrf_protection: ~
+    validation:      { enable_annotations: true }
+    templating:
+        engines: ['twig']
+        packages:
+             admingenerator_css:
+                version: 1.0
+                version_format: "%%1$s?v%%2$s"
+             admingenerator_js:
+                version: 1.0
+                version_format: "%%1$s?v%%2$s"
+             formextensions_css:
+                version: 1.0
+                version_format: "%%1$s?v%%2$s"
+             formextensions_js:
+                version: 1.0
+                version_format: "%%1$s?v%%2$s"
+    default_locale:  "%locale%"
+    trusted_hosts:   ~
+    trusted_proxies: ~
+    session:
+        # handler_id set to null will use default session handler from php.ini
+        handler_id:  ~
+    fragments:       ~
+    http_method_override: true
+
+# Twig Configuration
+twig:
+    debug:            "%kernel.debug%"
+    strict_variables: "%kernel.debug%"
+
+# Assetic Configuration
+assetic:
+    debug:          "%kernel.debug%"
+    use_controller: false
+#    bundles:        [] # comment this line to include all bundles by default
+    filters:
+        cssrewrite: ~
+        uglifycss:
+            bin: /usr/bin/uglifycss
+        uglifyjs2:
+            bin: /usr/bin/uglifyjs
+
+# Doctrine Configuration
+doctrine:
+    dbal:
+        driver:   "%database_driver%"
+        host:     "%database_host%"
+        port:     "%database_port%"
+        dbname:   "%database_name%"
+        user:     "%database_user%"
+        password: "%database_password%"
+        charset:  UTF8
+        # if using pdo_sqlite as your database driver, add the path in parameters.yml
+        # e.g. database_path: "%kernel.root_dir%/data/data.db3"
+        # path:     "%database_path%"
+
+    orm:
+        auto_generate_proxy_classes: "%kernel.debug%"
+        auto_mapping: true
+
+# Swiftmailer Configuration
+swiftmailer:
+    transport: "%mailer_transport%"
+    host:      "%mailer_host%"
+    username:  "%mailer_user%"
+    password:  "%mailer_password%"
+    spool:     { type: memory }

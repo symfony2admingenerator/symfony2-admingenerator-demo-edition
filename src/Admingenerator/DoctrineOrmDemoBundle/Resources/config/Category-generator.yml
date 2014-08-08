@@ -1,0 +1,56 @@
+generator: admingenerator.generator.doctrine
+params:
+    model:              Admingenerator\DoctrineOrmDemoBundle\Entity\Category
+    namespace_prefix:   Admingenerator
+    concurrency_lock:   ~
+    bundle_name:        DoctrineOrmDemoBundle
+    pk_requirement:     ~
+    fields: ~
+    object_actions:
+        delete: ~
+    batch_actions:
+        delete: ~
+builders:
+    list:
+        params:
+            title: Category list
+            display: ~
+            actions:
+                new: ~
+            object_actions:
+                edit: ~
+                delete: ~
+    excel:
+        params: ~
+        filename: ~
+        filetype: ~
+    filters:
+        params:
+            display: []
+    new:
+        params:
+            title: New category
+            display: ~
+            actions:
+                save: ~
+                list: ~
+    edit:
+        params:
+            title: Edit category
+            display: ~
+            actions:
+                save: ~
+                list: ~
+    show:
+        params:
+            title: Show category
+            display: ~
+            actions:
+                list: ~
+                new: ~
+    actions:
+        params:
+            object_actions:
+                delete: ~
+            batch_actions:
+                delete: ~

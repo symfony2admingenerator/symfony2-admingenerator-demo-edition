@@ -1,0 +1,15 @@
+welcome:
+    dropdown:	Unsecured menu
+    welcome:	Welcome
+    post:       List of posts
+    category:   List of categories
+    tag:        List of tags
+
+secured:
+    dropdown:	Secured menu
+
+headers:
+    doctrine_orm:   Doctrine ORM 
+    doctrine_odm:   Doctrine ODM 
+    propel_orm:     Propel ORM 
+    

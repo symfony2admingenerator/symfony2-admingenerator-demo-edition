@@ -1,0 +1,21 @@
+liip_imagine:
+    driver:               gd
+    cache:                default
+    data_loader:          default
+    controller:
+        filter_action:         liip_imagine.controller:filterAction
+        filter_runtime_action: liip_imagine.controller:filterRuntimeAction
+    resolvers:
+        default:
+            web_path:
+              web_root:     %kernel.root_dir%../web
+              cache_prefix: /media/cache
+    loaders:
+        default:
+            filesystem:
+                data_root:  %kernel.root_dir%/../private
+    filter_sets:
+        single_upload:
+            filters:
+                strip:      ~
+                thumbnail:  { size: [90, 90], mode: outbound }

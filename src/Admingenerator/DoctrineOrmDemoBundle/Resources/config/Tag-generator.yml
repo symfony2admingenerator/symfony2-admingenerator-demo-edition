@@ -1,0 +1,71 @@
+generator: admingenerator.generator.doctrine
+params:
+    model:              Admingenerator\DoctrineOrmDemoBundle\Entity\Tag
+    namespace_prefix:   Admingenerator
+    concurrency_lock:   ~
+    bundle_name:        DoctrineOrmDemoBundle
+    pk_requirement: ~
+    fields: ~
+    object_actions:
+        delete: ~
+    batch_actions:
+        delete: ~
+builders:
+    list:
+        params:
+            title: Tag list
+            display: ~
+            scopes:
+                "Tag name":
+                    "All tags": 
+                        default: true
+                        filters: ~
+                    "Amazing": 
+                        filters:
+                            name: 'Amazing'
+                    "Silly": 
+                        filters:
+                            name: 'Silly'
+                    "Sad": 
+                        filters:
+                            name: 'Sad'
+            actions:
+                new: ~
+            object_actions:
+                edit: ~
+                delete: ~
+    excel:
+        params: ~
+        filename: ~
+        filetype: ~
+    filters:
+        params:
+            display:
+                - name
+    new:
+        params:
+            title: New tag
+            display: ~
+            actions:
+                save: ~
+                list: ~
+    edit:
+        params:
+            title: Tag edit
+            display: ~
+            actions:
+                save: ~
+                list: ~
+    show:
+        params:
+            title: Tag show
+            display: ~
+            actions:
+                list: ~
+                new: ~
+    actions:
+        params:
+            object_actions:
+                delete: ~
+            batch_actions:
+                delete: ~

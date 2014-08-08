@@ -1,0 +1,66 @@
+generator: admingenerator.generator.doctrine
+params:
+    model:              Admingenerator\DoctrineOrmDemoBundle\Entity\Post
+    namespace_prefix:   Admingenerator
+    concurrency_lock:   ~
+    bundle_name:        DoctrineOrmDemoBundle
+    pk_requirement: ~
+    fields: ~
+    object_actions:
+        delete: ~
+    batch_actions:
+        delete: ~
+builders:
+    list:
+        params:
+            title: Post list
+            display: [ id, author, title, tags]
+            scopes:
+                "First Group":
+                    "Empty": 
+                        default: true
+                        filters: ~
+                    "Amazing": 
+                        filters:
+                            "tags.name": 'Amazing'
+            actions:
+                new: ~
+                excel: ~
+            object_actions:
+                edit: ~
+                delete: ~
+    excel:
+        params: 
+            display: [id, author, title]
+        filename: ~
+        filetype: ~
+    filters:
+        params:
+            display: []
+    new:
+        params:
+            title: New post
+            display: ~
+            actions:
+                save: ~
+                list: ~
+    edit:
+        params:
+            title: Edit post
+            display: ~
+            actions:
+                save: ~
+                list: ~
+    show:
+        params:
+            title: Show post
+            display: ~
+            actions:
+                list: ~
+                new: ~
+    actions:
+        params:
+            object_actions:
+                delete: ~
+            batch_actions:
+                delete: ~

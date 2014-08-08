@@ -1,0 +1,11 @@
+admingenerator_generator:
+    # choose  and enable at least one
+    use_propel:           false
+    use_doctrine_orm:     true
+    use_doctrine_odm:     false
+
+    # set customized base template
+    base_admin_template: AdmingeneratorDashboardDemoBundle::base_admin.html.twig
+
+    # enable dashboard brand link
+    dashboard_welcome_path:	admingenerator_demo_welcome

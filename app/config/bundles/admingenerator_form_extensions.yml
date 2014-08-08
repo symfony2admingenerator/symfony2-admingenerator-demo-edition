@@ -1,0 +1,3 @@
+admingenerator_form_extensions:
+    upload_manager:           vich_uploader
+    image_manipulator:        liip_imagine
