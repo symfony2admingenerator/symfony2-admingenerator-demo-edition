@@ -1,0 +1,20 @@
+category:
+    title:
+        list: Category list
+        new: New category
+        edit: Edit category
+        show: Show category
+
+post:
+    title:
+        list: Post list
+        new: New post
+        edit: Edit post
+        show: Show post
+
+tag:
+    title:
+        list: Tag list
+        new: New tag
+        edit: Tag edit
+        show: Tag show
