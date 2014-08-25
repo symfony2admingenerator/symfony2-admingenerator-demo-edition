@@ -1,0 +1,20 @@
+category:
+    title:
+        list: Liste der Kategorien
+        new: Neue Kategorie
+        edit: Kategorie bearbeiten
+        show: Kategorie anzeigen
+
+post:
+    title:
+        list: Liste der Posts
+        new: Neuer Post
+        edit: Post bearbeiten
+        show: Post anzeigen
+
+tag:
+    title:
+        list: Liste der Tags
+        new: Neuer Tag
+        edit: Tag bearbeiten
+        show: Tag anzeigen
