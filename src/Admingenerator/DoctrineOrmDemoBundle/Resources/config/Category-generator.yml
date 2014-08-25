@@ -2,6 +2,7 @@ generator: admingenerator.generator.doctrine
 params:
     model:              Admingenerator\DoctrineOrmDemoBundle\Entity\Category
     namespace_prefix:   Admingenerator
+    i18n_catalog:       AdmingeneratorOrmDemoBundle
     concurrency_lock:   ~
     bundle_name:        DoctrineOrmDemoBundle
     pk_requirement:     ~
@@ -13,7 +14,7 @@ params:
 builders:
     list:
         params:
-            title: Category list
+            title: category.title.list
             display: ~
             actions:
                 new: ~
@@ -29,21 +30,21 @@ builders:
             display: []
     new:
         params:
-            title: New category
+            title: category.title.new
             display: ~
             actions:
                 save: ~
                 list: ~
     edit:
         params:
-            title: Edit category
+            title: category.title.edit
             display: ~
             actions:
                 save: ~
                 list: ~
     show:
         params:
-            title: Show category
+            title: category.title.show
             display: ~
             actions:
                 list: ~

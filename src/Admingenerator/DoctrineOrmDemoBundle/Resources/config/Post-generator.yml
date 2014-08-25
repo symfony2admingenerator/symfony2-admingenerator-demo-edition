@@ -2,6 +2,7 @@ generator: admingenerator.generator.doctrine
 params:
     model:              Admingenerator\DoctrineOrmDemoBundle\Entity\Post
     namespace_prefix:   Admingenerator
+    i18n_catalog:       AdmingeneratorOrmDemoBundle
     concurrency_lock:   ~
     bundle_name:        DoctrineOrmDemoBundle
     pk_requirement: ~
@@ -13,14 +14,14 @@ params:
 builders:
     list:
         params:
-            title: Post list
+            title: post.title.list
             display: [ id, author, title, tags]
             scopes:
                 "First Group":
-                    "Empty": 
+                    "Empty":
                         default: true
                         filters: ~
-                    "Amazing": 
+                    "Amazing":
                         filters:
                             "tags.name": 'Amazing'
             actions:
@@ -30,7 +31,7 @@ builders:
                 edit: ~
                 delete: ~
     excel:
-        params: 
+        params:
             display: [id, author, title]
         filename: ~
         filetype: ~
@@ -39,21 +40,21 @@ builders:
             display: []
     new:
         params:
-            title: New post
+            title: post.title.new
             display: ~
             actions:
                 save: ~
                 list: ~
     edit:
         params:
-            title: Edit post
+            title: post.title.edit
             display: ~
             actions:
                 save: ~
                 list: ~
     show:
         params:
-            title: Show post
+            title: post.title.show
             display: ~
             actions:
                 list: ~
