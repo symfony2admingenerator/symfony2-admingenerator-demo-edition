@@ -25,3 +25,14 @@ as soon as Doctrine ORM will be stable.
 
 > **Note:** I'm aware that the documentation needs much improvement, please be patient, as soon
 > as I get v2.0 stable I'll rewrite the whole docs.
+
+Installation
+========================
+
+* Download and install [composer](https://getcomposer.org/doc/00-intro.md#downloading-the-composer-executable)
+* Clone GeneratorBundle from github: `git clone https://github.com/symfony2admingenerator/symfony2-admingenerator-demo-edition.git`
+* Configure your webserver to point to the web directory
+* install dependencies: `composer.phar install`
+* install and dumping assets: `app/console assetic:dump` and `app/console assets:install`
+* install schemas to database: `app/console doctrine:schema:create`
+* install fixtures: `app/console doctrine:fixtures:load`

@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c5b3661d52bfeaaac11e4ea2d1c8c3d2",
+    "hash": "3c98c7fbd90016420246b4adaa128025",
     "packages": [
         {
             "name": "afarkas/html5shiv",
@@ -2253,17 +2253,17 @@
         },
         {
             "name": "sensio/distribution-bundle",
-            "version": "v3.0.4",
+            "version": "v3.0.5",
             "target-dir": "Sensio/Bundle/DistributionBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/SensioDistributionBundle.git",
-                "reference": "df82b1ee2b833be97677c0b95fca27e68fd4a344"
+                "reference": "ad10123f2532f6e311e583cce203ef368eedc469"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioDistributionBundle/zipball/df82b1ee2b833be97677c0b95fca27e68fd4a344",
-                "reference": "df82b1ee2b833be97677c0b95fca27e68fd4a344",
+                "url": "https://api.github.com/repos/sensiolabs/SensioDistributionBundle/zipball/ad10123f2532f6e311e583cce203ef368eedc469",
+                "reference": "ad10123f2532f6e311e583cce203ef368eedc469",
                 "shasum": ""
             },
             "require": {
@@ -2302,7 +2302,7 @@
                 "configuration",
                 "distribution"
             ],
-            "time": "2014-08-06 09:24:35"
+            "time": "2014-08-26 13:14:47"
         },
         {
             "name": "sensio/framework-extra-bundle",
@@ -2916,17 +2916,17 @@
         },
         {
             "name": "symfony2admingenerator/form-bundle",
-            "version": "dev-master",
+            "version": "v1.0.0",
             "target-dir": "Admingenerator/FormBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony2admingenerator/FormBundle.git",
-                "reference": "d1c08e7b0a914c88ce06c2099a846ffee998cbc3"
+                "reference": "8a75a3e30074be10a03c2edaacabe43389604f73"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony2admingenerator/FormBundle/zipball/d1c08e7b0a914c88ce06c2099a846ffee998cbc3",
-                "reference": "d1c08e7b0a914c88ce06c2099a846ffee998cbc3",
+                "url": "https://api.github.com/repos/symfony2admingenerator/FormBundle/zipball/8a75a3e30074be10a03c2edaacabe43389604f73",
+                "reference": "8a75a3e30074be10a03c2edaacabe43389604f73",
                 "shasum": ""
             },
             "require": {
@@ -2935,9 +2935,15 @@
                 "twig/twig": ">= 1.9.0"
             },
             "suggest": {
-                "cedriclombardot/admingenerator-generator-bundle": "The missing symfony2 admin generator"
+                "symfony2admingenerator/form-extensions-bundle": "Symfony2 form extensions for Admingenerator project (also working standalone!)",
+                "symfony2admingenerator/generator-bundle": "The missing symfony2 admin generator"
             },
             "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
             "autoload": {
                 "psr-0": {
                     "Admingenerator\\FormBundle": ""
@@ -2959,7 +2965,7 @@
                 }
             ],
             "description": "Twig extension introduceing new blocks to seperate form HTML structure from CSS decorating it and JS enhancing it's functionalities.",
-            "time": "2014-07-25 10:25:34"
+            "time": "2014-08-22 17:20:24"
         },
         {
             "name": "symfony2admingenerator/form-extensions-bundle",
@@ -2968,12 +2974,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony2admingenerator/FormExtensionsBundle.git",
-                "reference": "621e11c1840b7019b255cec15e88186442683b19"
+                "reference": "9933f4b3ea66333cc5b6304da5c120ac3fa36036"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony2admingenerator/FormExtensionsBundle/zipball/621e11c1840b7019b255cec15e88186442683b19",
-                "reference": "621e11c1840b7019b255cec15e88186442683b19",
+                "url": "https://api.github.com/repos/symfony2admingenerator/FormExtensionsBundle/zipball/9933f4b3ea66333cc5b6304da5c120ac3fa36036",
+                "reference": "9933f4b3ea66333cc5b6304da5c120ac3fa36036",
                 "shasum": ""
             },
             "require": {
@@ -2984,12 +2990,14 @@
                 "components/jqueryui": "1.11.0",
                 "robloach/component-installer": "~0.0.11",
                 "symfony/symfony": ">= 2.2.0",
+                "symfony2admingenerator/form-bundle": "@stable",
                 "twig/extensions": "~1.0",
                 "twig/twig": ">= 1.9.0"
             },
             "suggest": {
                 "liip/imagine-bundle": "Apply filters on preview images",
-                "symfony2admingenerator/admingenerator-generator-bundle": "The missing symfony2 admin generator"
+                "symfony2admingenerator/generator-bundle": "The missing symfony2 admin generator",
+                "vich/uploader-bundle": "(>= 0.10.0) Bundle to ease file uploads with ORM entities and ODM documents"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -3013,7 +3021,7 @@
                 }
             ],
             "description": "Add additional form types to symfony2",
-            "time": "2014-08-07 09:28:23"
+            "time": "2014-08-26 09:10:42"
         },
         {
             "name": "symfony2admingenerator/generator-bundle",
@@ -3022,12 +3030,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony2admingenerator/GeneratorBundle.git",
-                "reference": "7c40afbdbc5f40a691dbc946b3c052c3131e2c65"
+                "reference": "647f4af05eec8ad00850b02623221ba07d572bf6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony2admingenerator/GeneratorBundle/zipball/7c40afbdbc5f40a691dbc946b3c052c3131e2c65",
-                "reference": "7c40afbdbc5f40a691dbc946b3c052c3131e2c65",
+                "url": "https://api.github.com/repos/symfony2admingenerator/GeneratorBundle/zipball/647f4af05eec8ad00850b02623221ba07d572bf6",
+                "reference": "647f4af05eec8ad00850b02623221ba07d572bf6",
                 "shasum": ""
             },
             "require": {
@@ -3037,11 +3045,12 @@
                 "components/font-awesome": "~4.0",
                 "components/jquery": "1.9.1",
                 "components/jqueryui": "1.11.0",
+                "jms/security-extra-bundle": ">= 1.5.0",
                 "knplabs/knp-menu-bundle": ">1.0,<2.1",
                 "robloach/component-installer": "~0.0.11",
                 "sensio/generator-bundle": ">= 2.3.3",
                 "symfony/symfony": ">= 2.3.0",
-                "symfony2admingenerator/form-bundle": "dev-master",
+                "symfony2admingenerator/form-bundle": "@stable",
                 "twig/extensions": "~1.0",
                 "twig/twig": ">= 1.9.0",
                 "white-october/pagerfanta-bundle": "1.0.*@dev"
@@ -3052,10 +3061,9 @@
                 "doctrine/orm": ">=2.2.3,<2.5-dev"
             },
             "suggest": {
-                "cedriclombardot/admingenerator-user-bundle": "FOSUserBundle integration for Admingenerator",
-                "jms/security-extra-bundle": "Allows expressions in credential checks for generated actions",
                 "liuggio/excelbundle": "(version >= 2.0) Allows the usage of the Excel export.",
-                "symfony2admingenerator/form-extensions-bundle": "Symfony2 form extensions for Admingenerator"
+                "symfony2admingenerator/form-extensions-bundle": "Symfony2 form extensions for Admingenerator",
+                "symfony2admingenerator/user-bundle": "FOSUserBundle integration for Admingenerator"
             },
             "type": "symfony-bundle",
             "extra": {
@@ -3089,7 +3097,7 @@
                 "generator",
                 "yaml"
             ],
-            "time": "2014-08-07 09:11:21"
+            "time": "2014-08-26 06:02:27"
         },
         {
             "name": "twig/extensions",
@@ -3309,8 +3317,12 @@
             "time": "2014-01-07 13:33:53"
         }
     ],
-    "packages-dev": [],
-    "aliases": [],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
     "minimum-stability": "dev",
     "stability-flags": {
         "symfony2admingenerator/generator-bundle": 20,
@@ -3320,5 +3332,7 @@
     "platform": {
         "php": ">=5.3.3"
     },
-    "platform-dev": []
+    "platform-dev": [
+
+    ]
 }
