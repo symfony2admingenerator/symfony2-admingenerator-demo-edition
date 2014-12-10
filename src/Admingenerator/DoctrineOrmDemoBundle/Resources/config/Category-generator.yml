@@ -12,7 +12,7 @@ params:
     batch_actions:
         delete: ~
 builders:
-    list:
+    nested_list:
         params:
             title: category.title.list
             display: ~

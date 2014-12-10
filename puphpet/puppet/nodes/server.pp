@@ -21,7 +21,7 @@ user { $::ssh_username:
 user { ['apache', 'nginx', 'httpd', 'www-data']:
   shell  => '/bin/bash',
   ensure => present,
-  groups => 'www-data',
+  groups => ['www-data', 'www-user', "${::ssh_username}"],
   require => Group['www-data']
 }
 
