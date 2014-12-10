@@ -20,9 +20,9 @@ if [ `whoami` = 'root' ]; then
     find "/tmp/${SYMFONY__VAGRANT__ENV}" -type d -exec chmod 775 {} \; -exec chmod g+s {} \;
 fi
 
-echo 'Flushing Redis cache'
-php bin/console redis:flushall --client=cache -n
-php bin/console redis:flushall --client=default -n
+# echo 'Flushing Redis cache'
+# php bin/console redis:flushall --client=cache -n
+# php bin/console redis:flushall --client=default -n
 
 echo 'Restarting Apache'
 sudo /etc/init.d/apache2 restart

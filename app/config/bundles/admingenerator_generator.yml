@@ -9,4 +9,5 @@ admingenerator_generator:
 
     # enable dashboard brand link
     dashboard_route:	admingenerator_demo_welcome
+    login_route: admingenerator_demo_welcome
 

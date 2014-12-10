@@ -2,21 +2,6 @@
 
 {% block title %}Admingenerator Demo{% endblock %}
 
-{% block stylesheets %}
-    {{ parent() }}
-
-    {% include 'AdmingeneratorFormExtensionsBundle::stylesheets.html.twig' %}
-{% endblock %}
-
-{% block javascripts %}
-    {{ parent() }}
-
-    {% include 'AdmingeneratorFormExtensionsBundle::javascripts.html.twig' %}
-    {% if form is defined %}
-        {{ form_js(form) }}
-    {% endif %}
-{% endblock %}
-
 {% block navbar %}
     {% embed 'AdmingeneratorGeneratorBundle::base_admin_navbar.html.twig' %}
         {% block menu %}{{ knp_menu_render('AdmingeneratorDashboardDemoBundle:DashboardMenuBuilder:navbarMenu') }}{% endblock %}

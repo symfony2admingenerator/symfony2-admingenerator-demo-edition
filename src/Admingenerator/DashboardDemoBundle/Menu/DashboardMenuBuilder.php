@@ -8,8 +8,6 @@ use Knp\Menu\FactoryInterface;
 
 class DashboardMenuBuilder extends AdmingeneratorMenuBuilder
 {
-    protected $translation_domain = 'AdmingeneratorDashboardDemoMenu';
-    
     /**
      * Check security expression
      * @param string $expression
@@ -32,6 +30,7 @@ class DashboardMenuBuilder extends AdmingeneratorMenuBuilder
                 ->addLinkRoute($menu, 'admingenerator.dashboard', $dashboardRoute)
                 ->setExtra('icon', 'fa fa-dashboard');
         }
+        $this->translation_domain = 'AdmingeneratorDashboardDemoMenu';
 
         $this->addWelcomeMenu($menu);
         $this->addSecuredMenu($menu);
