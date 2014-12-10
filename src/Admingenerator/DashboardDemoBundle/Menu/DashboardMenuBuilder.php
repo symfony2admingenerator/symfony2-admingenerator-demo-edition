@@ -25,8 +25,14 @@ class DashboardMenuBuilder extends AdmingeneratorMenuBuilder
     public function navbarMenu(FactoryInterface $factory, array $options)
     {
         $menu = $factory->createItem('root');
-        $menu->setChildrenAttributes(array('id' => 'main_navigation', 'class' => 'nav navbar-nav'));
-        
+        $menu->setChildrenAttributes(array('class' => 'sidebar-menu'));
+
+        if ($dashboardRoute = $this->container->getParameter('admingenerator.dashboard_route')) {
+            $this
+                ->addLinkRoute($menu, 'admingenerator.dashboard', $dashboardRoute)
+                ->setExtra('icon', 'fa fa-dashboard');
+        }
+
         $this->addWelcomeMenu($menu);
         $this->addSecuredMenu($menu);
         
@@ -38,11 +44,6 @@ class DashboardMenuBuilder extends AdmingeneratorMenuBuilder
         $welcome = $this->addDropdown($menu, 'welcome.dropdown');
         
         $this->addLinkRoute($welcome, 'welcome.welcome', 'admingenerator_demo_welcome');
-        
-        $this->addDivider($welcome);
-        
-        $this->addHeader($welcome, 'headers.doctrine_orm');
-        
         $this->addLinkRoute($welcome, 'welcome.post', 'Admingenerator_DoctrineOrmDemoBundle_Post_list');
         $this->addLinkRoute($welcome, 'welcome.category', 'Admingenerator_DoctrineOrmDemoBundle_Category_list');
         $this->addLinkRoute($welcome, 'welcome.tag', 'Admingenerator_DoctrineOrmDemoBundle_Tag_list');
@@ -53,7 +54,7 @@ class DashboardMenuBuilder extends AdmingeneratorMenuBuilder
     private function addSecuredMenu($menu)
     {
         if ($this->isGranted('canSeeSecuredMenu()')) {
-            $secured = $this->addDropdown($menu, 'secured.dropdown');
+            $this->addDropdown($menu, 'secured.dropdown');
         }
         
         return $menu;

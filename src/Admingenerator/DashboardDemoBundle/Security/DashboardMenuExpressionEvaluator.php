@@ -3,23 +3,26 @@
 namespace Admingenerator\DashboardDemoBundle\Security;
 
 use JMS\DiExtraBundle\Annotation as DI;
-use Symfony\Component\DependencyInjection\ContainerInterface;
+use Symfony\Component\Security\Core\SecurityContextInterface;
 
 /**
  * @DI\Service 
  */
 class DashboardMenuExpressionEvaluator
 {
-    protected $container;
+    /**
+     * @var SecurityContextInterface
+     */
+    protected $securityContext;
 
     /**
      * @DI\InjectParams({
-     *     "container" = @DI\Inject("service_container"),
+     *     "securityContext" = @DI\Inject("security.context"),
      * })
      */
-    public function __construct(ContainerInterface $container)
+    public function __construct(SecurityContextInterface $securityContext)
     {
-        $this->container = $container;
+        $this->securityContext = $securityContext;
     }
 
     /**
@@ -27,6 +30,6 @@ class DashboardMenuExpressionEvaluator
      */
     public function canSeeSecuredMenu()
     {
-        return $this->container->get('security.context')->isGranted('ROLE_USER');
+        return $this->securityContext->isGranted('ROLE_USER');
     }
 }

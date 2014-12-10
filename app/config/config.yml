@@ -7,10 +7,6 @@ imports:
     - { resource: bundles/knp_menu.yml }
     - { resource: bundles/jms_di_extra.yml }
     - { resource: bundles/jms_security_extra.yml }
-    # S2A FormExtensionsBundle
-    - { resource: bundles/admingenerator_form_extensions.yml }
-    - { resource: bundles/liip_imagine.yml }
-    - { resource: bundles/vich_uploader.yml }
     # S2A DemoBundle
     - { resource: bundles/stof_doctrine_extensions.yml }
 

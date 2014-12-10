@@ -1,4 +1,4 @@
-{% extends 'AdmingeneratorGeneratorBundle::base_admin.html.twig' %}
+{% extends 'AdmingeneratorGeneratorBundle::base_uncompressed.html.twig' %}
 
 {% block title %}Admingenerator Demo{% endblock %}
 
@@ -12,10 +12,23 @@
     {{ parent() }}
 
     {% include 'AdmingeneratorFormExtensionsBundle::javascripts.html.twig' %}
+    {% if form is defined %}
+        {{ form_js(form) }}
+    {% endif %}
 {% endblock %}
 
 {% block navbar %}
-{% embed 'AdmingeneratorGeneratorBundle::base_admin_navbar.html.twig' %}
-    {% block menu %}{{ knp_menu_render('AdmingeneratorDashboardDemoBundle:DashboardMenuBuilder:navbarMenu') }}{% endblock %}
-{% endembed %}
+    {% embed 'AdmingeneratorGeneratorBundle::base_admin_navbar.html.twig' %}
+        {% block menu %}{{ knp_menu_render('AdmingeneratorDashboardDemoBundle:DashboardMenuBuilder:navbarMenu') }}{% endblock %}
+    {% endembed %}
 {% endblock navbar %}
+
+{% block sidebar %}
+    <aside class="left-side sidebar-offcanvas">
+        {% embed "AdmingeneratorGeneratorBundle:Sidebar:layout.html.twig" %}
+            {% block sidebar_menu %}
+                {{ knp_menu_render('AdmingeneratorDashboardDemoBundle:DashboardMenuBuilder:navbarMenu') }}
+            {% endblock %}
+        {% endembed %}
+    </aside>
+{% endblock sidebar %}

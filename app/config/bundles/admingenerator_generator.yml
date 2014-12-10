@@ -8,4 +8,5 @@ admingenerator_generator:
     base_admin_template: AdmingeneratorDashboardDemoBundle::base_admin.html.twig
 
     # enable dashboard brand link
-    dashboard_welcome_path:	admingenerator_demo_welcome
+    dashboard_route:	admingenerator_demo_welcome
+
