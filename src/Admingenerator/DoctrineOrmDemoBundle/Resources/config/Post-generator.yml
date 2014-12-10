@@ -21,9 +21,9 @@ builders:
                     "Empty":
                         default: true
                         filters: ~
-                    "Amazing":
+                    "Published":
                         filters:
-                            "tags.name": 'Amazing'
+                            "isPublished": 1
             actions:
                 new: ~
                 excel: ~

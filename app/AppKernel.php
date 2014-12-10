@@ -14,7 +14,7 @@ class AppKernel extends Kernel
     {
         parent::__construct($environment, $debug);
 
-        $envParameters = array(); // $this->getEnvParameters();
+        $envParameters = $this->getEnvParameters();
         if (array_key_exists('vagrant.env', $envParameters)) {
             $this->tempDir = sys_get_temp_dir() . '/' . $envParameters['vagrant.env'];
         }
