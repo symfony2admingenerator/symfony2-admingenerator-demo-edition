@@ -11,3 +11,6 @@
 /composer.phar
 /web/components/
 /web/assetic/
+.vagrant/
+puphpet/files/dot/ssh/id*
+puphpet/files/dot/ssh/root*

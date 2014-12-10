@@ -3,9 +3,9 @@ parameters:
     database_driver: pdo_mysql
     database_host: 127.0.0.1
     database_port: null
-    database_name: prosass
-    database_user: uprosass
-    database_password: pprosass
+    database_name: demogen
+    database_user: udemogen
+    database_password: pdemogen
     mailer_transport: smtp
     mailer_host: 127.0.0.1
     mailer_user: null
@@ -15,3 +15,4 @@ parameters:
     debug_toolbar: true
     debug_redirects: false
     use_assetic_controller: true
+    assets_version: 1.0
