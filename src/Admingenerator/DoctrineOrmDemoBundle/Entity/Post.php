@@ -4,7 +4,6 @@ namespace Admingenerator\DoctrineOrmDemoBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
-use Vich\UploaderBundle\Mapping\Annotation as Vich;
 
 /**
  * @ORM\Table(name="s2a_demo_doctrine_orm_post")
@@ -56,7 +55,6 @@ class Post
     /**
      * @Assert\File(maxSize="6000000")
      * @Assert\File(mimeTypes = {"image/jpeg", "image/png"})
-     * @Vich\UploadableField(mapping="doctrine_orm_blog_post_thumb", fileNameProperty="thumbPath")
      */
     protected $thumbFile;
     

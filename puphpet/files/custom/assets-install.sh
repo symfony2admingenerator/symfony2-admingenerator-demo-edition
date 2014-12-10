@@ -9,6 +9,7 @@ if [ ! -d /var/www/app ]; then
 fi
 
 echo 'Dumping assets'
+php bin/console admin:assets-install
 php bin/console assets:install web
 php bin/console assetic:dump
 php bin/console assetic:dump -e prod

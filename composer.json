@@ -8,7 +8,7 @@
     },
     "require": {
         "php": ">=5.3.3",
-        "symfony/symfony": "~2.6.1",
+        "symfony/symfony": "~2.5",
         "doctrine/orm": "~2.2,>=2.2.3",
         "doctrine/doctrine-bundle": "~1.2",
         "twig/extensions": "~1.0",
@@ -25,7 +25,7 @@
         "doctrine/doctrine-fixtures-bundle": "~2.2.0"
     },
     "require-dev": {
-        "sensio/generator-bundle": "~2.3"
+        "sensio/generator-bundle": "~2.4.0"
     },
     "scripts": {
         "post-root-package-install": [
@@ -38,7 +38,7 @@
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::removeSymfonyStandardFiles",
-            "Admingenerator\\AdmingeneratorGeneratorBundle\\Composer\\ScriptHandler::installAssets"
+            "Admingenerator\\GeneratorBundle\\Composer\\ScriptHandler::installAssets"
         ],
         "post-update-cmd": [
             "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
@@ -47,7 +47,7 @@
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::removeSymfonyStandardFiles",
-            "Admingenerator\\AdmingeneratorGeneratorBundle\\Composer\\ScriptHandler::installAssets"
+            "Admingenerator\\GeneratorBundle\\Composer\\ScriptHandler::installAssets"
         ]
     },
     "config": {

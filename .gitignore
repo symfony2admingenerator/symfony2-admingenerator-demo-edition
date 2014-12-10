@@ -14,3 +14,4 @@
 .vagrant/
 puphpet/files/dot/ssh/id*
 puphpet/files/dot/ssh/root*
+web/admin
