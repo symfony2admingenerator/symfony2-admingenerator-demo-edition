@@ -13,6 +13,8 @@ params:
         delete: ~
 builders:
     nested_list:
+        indentation:
+            field: name
         params:
             title: category.title.list
             display: ~
@@ -27,7 +29,7 @@ builders:
         filetype: ~
     filters:
         params:
-            display: []
+            display: ~
     new:
         params:
             title: category.title.new

@@ -6,7 +6,11 @@ params:
     concurrency_lock:   ~
     bundle_name:        DoctrineOrmDemoBundle
     pk_requirement: ~
-    fields: ~
+    fields:
+        id:
+            filterable: 1
+        author:
+            filterable: 1
     object_actions:
         delete: ~
     batch_actions:
@@ -16,6 +20,7 @@ builders:
         params:
             title: post.title.list
             display: [ id, author, title, tags]
+            filters: ~
             scopes:
                 "First Group":
                     "Empty":
@@ -24,6 +29,9 @@ builders:
                     "Published":
                         filters:
                             "isPublished": 1
+                    "John":
+                        filters:
+                            "author": "John Doe"
             actions:
                 new: ~
                 excel: ~
@@ -35,9 +43,6 @@ builders:
             display: [id, author, title]
         filename: ~
         filetype: ~
-    filters:
-        params:
-            display: []
     new:
         params:
             title: post.title.new

@@ -6,7 +6,9 @@ params:
     concurrency_lock:   ~
     bundle_name:        DoctrineOrmDemoBundle
     pk_requirement: ~
-    fields: ~
+    fields:
+        name:
+            filterable: 1
     object_actions:
         delete: ~
     batch_actions:
@@ -16,6 +18,8 @@ builders:
         params:
             title: tag.title.list
             display: ~
+            filters: ~
+            filtersMode: top
             scopes:
                 "Tag name":
                     "All tags":

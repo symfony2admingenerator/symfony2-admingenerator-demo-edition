@@ -4,7 +4,7 @@ vagrantfile-local:
         box: puphpet/debian75-x64
         box_url: puphpet/debian75-x64
         hostname: ''
-        memory: '512'
+        memory: '1024'
         cpus: '2'
         chosen_provider: virtualbox
         network:
