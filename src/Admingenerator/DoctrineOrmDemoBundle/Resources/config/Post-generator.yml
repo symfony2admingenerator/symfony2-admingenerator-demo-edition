@@ -46,14 +46,23 @@ builders:
     new:
         params:
             title: post.title.new
-            display: ~
+            display:
+                - title
+                - author
+                - tags
+                - thumbPath
+                - category
+                - content
             actions:
                 save: ~
                 list: ~
     edit:
         params:
             title: post.title.edit
-            display: ~
+            display:
+                - title
+                - author
+                - tags
             actions:
                 save: ~
                 list: ~

@@ -60,5 +60,5 @@ alias initProject='VAGRANT_CORE_FOLDER=$(cat "/.puphpet-stuff/vagrant-core-folde
 alias cacheClear='VAGRANT_CORE_FOLDER=$(cat "/.puphpet-stuff/vagrant-core-folder.txt") && . "${VAGRANT_CORE_FOLDER}"/files/custom/cache-clear.sh'
 alias assetsInstall='VAGRANT_CORE_FOLDER=$(cat "/.puphpet-stuff/vagrant-core-folder.txt") && . "${VAGRANT_CORE_FOLDER}"/files/custom/assets-install.sh'
 alias cacheClearAndAssetsInstall='cacheClear && assetsInstall && copyCache'
-alias copyCache='rm -rf /var/www/app/cache/* && cp -r /tmp/${SYMFONY__VAGRANT__ENV}/cache/* /var/www/app/cache/'
+alias copyCache='rm -rf /var/www/var/cache/* && cp -r /tmp/${SYMFONY__VAGRANT__ENV}/cache/* /var/www/var/cache/'
 

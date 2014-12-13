@@ -50,7 +50,7 @@ class Post
      * @Assert\Type(type="boolean")
      * @ORM\Column(type="boolean")
      */
-    protected $isPublished;
+    protected $isPublished = true;
     
     /**
      * @Assert\File(maxSize="6000000")
@@ -85,6 +85,7 @@ class Post
     public function __construct()
     {
         $this->tags = new \Doctrine\Common\Collections\ArrayCollection();
+        $this->createdAt = new \DateTime();
     }
 
     /**
