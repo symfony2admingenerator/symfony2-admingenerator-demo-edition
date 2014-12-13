@@ -63,11 +63,18 @@ builders:
                 - title
                 - author
                 - tags
+            object_actions:
+                show: ~
             actions:
                 save: ~
                 list: ~
     show:
         params:
+            sidebar:
+                post.box.first:
+                    partial: AdmingeneratorDoctrineOrmDemoBundle:PostShow:firstBoxSidebar.html.twig
+                post.box.second:
+                    partial: AdmingeneratorDoctrineOrmDemoBundle:PostShow:secondBoxSidebar.html.twig
             title: post.title.show
             display: ~
             actions:
