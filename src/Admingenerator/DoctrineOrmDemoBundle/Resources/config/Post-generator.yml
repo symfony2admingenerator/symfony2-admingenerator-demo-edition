@@ -7,9 +7,9 @@ params:
     bundle_name:        DoctrineOrmDemoBundle
     pk_requirement: ~
     fields:
-        id:
-            filterable: 1
         author:
+            filterable: 1
+        isPublished:
             filterable: 1
     object_actions:
         delete: ~
@@ -19,19 +19,23 @@ builders:
     list:
         params:
             title: post.title.list
-            display: [ id, author, title, tags]
-            filters: ~
+            display: [ id, author, title, tags, isPublished ]
+            filters:
+                - author
+                - isPublished
             scopes:
                 "First Group":
                     "Empty":
-                        default: true
                         filters: ~
-                    "Published":
-                        filters:
-                            "isPublished": 1
                     "John":
+                        default: true
                         filters:
                             "author": "John Doe"
+                "Second group":
+                    "Published":
+                        default: true
+                        filters:
+                            "isPublished": 1
             actions:
                 new: ~
                 excel: ~
