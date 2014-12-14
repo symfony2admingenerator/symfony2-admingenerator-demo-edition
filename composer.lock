@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8b5ecd6330d9e03ccb268645169c702e",
+    "hash": "f35b9a4d93b61d33e2099d0c525df9d8",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -2475,17 +2475,17 @@
         },
         {
             "name": "symfony2admingenerator/generator-bundle",
-            "version": "dev-feature-adminlte",
+            "version": "dev-master",
             "target-dir": "Admingenerator/GeneratorBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony2admingenerator/GeneratorBundle.git",
-                "reference": "9ee1c4e9b7f6047fd66cb09d8307ad5e8fbf46c8"
+                "reference": "65b72ee9952cfb5ff97a7f1292d6cbb7af2c1ff7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony2admingenerator/GeneratorBundle/zipball/9ee1c4e9b7f6047fd66cb09d8307ad5e8fbf46c8",
-                "reference": "9ee1c4e9b7f6047fd66cb09d8307ad5e8fbf46c8",
+                "url": "https://api.github.com/repos/symfony2admingenerator/GeneratorBundle/zipball/65b72ee9952cfb5ff97a7f1292d6cbb7af2c1ff7",
+                "reference": "65b72ee9952cfb5ff97a7f1292d6cbb7af2c1ff7",
                 "shasum": ""
             },
             "require": {
@@ -2541,7 +2541,7 @@
                 "generator",
                 "yaml"
             ],
-            "time": "2014-12-13 17:37:28"
+            "time": "2014-12-14 19:16:48"
         },
         {
             "name": "symfony2admingenerator/twig-generator",
