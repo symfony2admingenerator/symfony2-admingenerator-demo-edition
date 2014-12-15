@@ -1,0 +1,20 @@
+category:
+    title:
+        list: Liste des catégories
+        new:  Nouvelle catégorie
+        edit: Modification de catégorie
+        show: Affiche de catégorie
+
+post:
+    title:
+        list: Liste des articles
+        new: Nouvel article
+        edit: Modification d'article
+        show: Affichage de l'article
+
+tag:
+    title:
+        list: Liste des mots-clés
+        new: Nouveau mot-clé
+        edit: Modification de mot-clé
+        show: Affichage de mot-clé

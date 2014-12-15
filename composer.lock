@@ -2479,12 +2479,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony2admingenerator/GeneratorBundle.git",
-                "reference": "f927fd7bcee6c39f385082a9dc87dd8353013c38"
+                "reference": "47d24ca5516e532b4051204b1148d303bf12bd1c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony2admingenerator/GeneratorBundle/zipball/f927fd7bcee6c39f385082a9dc87dd8353013c38",
-                "reference": "f927fd7bcee6c39f385082a9dc87dd8353013c38",
+                "url": "https://api.github.com/repos/symfony2admingenerator/GeneratorBundle/zipball/47d24ca5516e532b4051204b1148d303bf12bd1c",
+                "reference": "47d24ca5516e532b4051204b1148d303bf12bd1c",
                 "shasum": ""
             },
             "require": {
@@ -2540,7 +2540,7 @@
                 "generator",
                 "yaml"
             ],
-            "time": "2014-12-15 19:15:05"
+            "time": "2014-12-15 21:27:32"
         },
         {
             "name": "symfony2admingenerator/twig-generator",
