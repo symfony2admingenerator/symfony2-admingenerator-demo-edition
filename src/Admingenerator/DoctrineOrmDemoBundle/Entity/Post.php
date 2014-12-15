@@ -51,6 +51,12 @@ class Post
      * @ORM\Column(type="boolean")
      */
     protected $isPublished = true;
+
+    /**
+     * @ORM\Column(type="date", nullable=true)
+     * @var \DateTime
+     */
+    protected $expirationDate = null;
     
     /**
      * @Assert\File(maxSize="6000000")
@@ -290,5 +296,25 @@ class Post
     public function getTags()
     {
         return $this->tags;
+    }
+
+    /**
+     * Set Expiration Date (clone it)
+     *
+     * @param \DateTime $expirationDate
+     */
+    public function setExpirationDate(\DateTime $expirationDate)
+    {
+        $this->expirationDate = clone $expirationDate;
+    }
+
+    /**
+     * Get expiration date
+     *
+     * @return null|\DateTime
+     */
+    public function getExpirationDate()
+    {
+        return $this->expirationDate?clone $this->expirationDate : null;
     }
 }

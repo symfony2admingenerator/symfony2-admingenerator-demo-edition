@@ -11,6 +11,8 @@ params:
             filterable: 1
         isPublished:
             filterable: 1
+        expirationDate:
+            filterable: 1
     object_actions:
         delete: ~
     batch_actions:
@@ -19,7 +21,7 @@ builders:
     list:
         params:
             title: post.title.list
-            display: [ id, author, title, tags, isPublished ]
+            display: [ author, title, tags, expirationDate ]
             filters:
                 - author
                 - isPublished
@@ -57,6 +59,7 @@ builders:
                 - thumbPath
                 - category
                 - content
+                - expirationDate
             actions:
                 save: ~
                 list: ~
@@ -67,6 +70,10 @@ builders:
                 - title
                 - author
                 - tags
+                - thumbPath
+                - category
+                - content
+                - expirationDate
             object_actions:
                 show: ~
             actions:
