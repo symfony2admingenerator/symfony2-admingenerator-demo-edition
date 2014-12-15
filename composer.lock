@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d7d0b0002b3bd99def75be8a501bd73c",
+    "hash": "f6f4ecfa765ff57860ee483e8c76cbda",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -1972,21 +1972,21 @@
         },
         {
             "name": "sensio/generator-bundle",
-            "version": "v2.4.4",
+            "version": "v2.5.0",
             "target-dir": "Sensio/Bundle/GeneratorBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/SensioGeneratorBundle.git",
-                "reference": "100a9d393b4a1623a997c46eaf7f47c99158ea79"
+                "reference": "0225fcd08e94de2165ffa85de50c3c9d9592e96b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioGeneratorBundle/zipball/100a9d393b4a1623a997c46eaf7f47c99158ea79",
-                "reference": "100a9d393b4a1623a997c46eaf7f47c99158ea79",
+                "url": "https://api.github.com/repos/sensiolabs/SensioGeneratorBundle/zipball/0225fcd08e94de2165ffa85de50c3c9d9592e96b",
+                "reference": "0225fcd08e94de2165ffa85de50c3c9d9592e96b",
                 "shasum": ""
             },
             "require": {
-                "symfony/console": "~2.0",
+                "symfony/console": "~2.5",
                 "symfony/framework-bundle": "~2.2"
             },
             "require-dev": {
@@ -1997,7 +1997,7 @@
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.4.x-dev"
+                    "dev-master": "2.5.x-dev"
                 }
             },
             "autoload": {
@@ -2016,7 +2016,7 @@
                 }
             ],
             "description": "This bundle generates code for you",
-            "time": "2014-12-07 18:26:57"
+            "time": "2014-12-07 18:30:52"
         },
         {
             "name": "sensiolabs/security-checker",
@@ -2475,24 +2475,24 @@
         },
         {
             "name": "symfony2admingenerator/generator-bundle",
-            "version": "dev-fix-issue60",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony2admingenerator/GeneratorBundle.git",
-                "reference": "e2a0c077de51a16928c690e72cc9dcba022bae9e"
+                "reference": "32cc99b0d45c3cb930e13a9e88760cd7c476ce64"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony2admingenerator/GeneratorBundle/zipball/e2a0c077de51a16928c690e72cc9dcba022bae9e",
-                "reference": "e2a0c077de51a16928c690e72cc9dcba022bae9e",
+                "url": "https://api.github.com/repos/symfony2admingenerator/GeneratorBundle/zipball/32cc99b0d45c3cb930e13a9e88760cd7c476ce64",
+                "reference": "32cc99b0d45c3cb930e13a9e88760cd7c476ce64",
                 "shasum": ""
             },
             "require": {
                 "doctrine/common": "~2.2",
                 "jms/security-extra-bundle": ">= 1.5.0",
                 "knplabs/knp-menu-bundle": ">1.0,<2.1",
-                "sensio/generator-bundle": ">= 2.3.3",
-                "symfony/symfony": ">= 2.3.0",
+                "sensio/generator-bundle": "~2.4",
+                "symfony/symfony": "~2.6",
                 "symfony2admingenerator/twig-generator": "~1.1",
                 "twig/extensions": "~1.0",
                 "twig/twig": ">= 1.9.0",
@@ -2540,7 +2540,7 @@
                 "generator",
                 "yaml"
             ],
-            "time": "2014-12-14 23:05:46"
+            "time": "2014-12-15 13:03:45"
         },
         {
             "name": "symfony2admingenerator/twig-generator",

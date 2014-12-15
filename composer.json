@@ -8,7 +8,7 @@
     },
     "require": {
         "php": ">=5.3.3",
-        "symfony/symfony": "~2.5",
+        "symfony/symfony": "~2.6",
         "doctrine/orm": "~2.2,>=2.2.3",
         "doctrine/doctrine-bundle": "~1.2",
         "twig/extensions": "~1.0",
@@ -18,14 +18,11 @@
         "sensio/distribution-bundle": "~3.0.12",
         "sensio/framework-extra-bundle": "~3.0",
         "incenteev/composer-parameter-handler": "~2.0",
-        "symfony2admingenerator/generator-bundle": "dev-fix-issue60",
+        "symfony2admingenerator/generator-bundle": "dev-master",
         "liuggio/excelbundle": "~2.0",
         "jms/security-extra-bundle": "~1.5.0",
         "stof/doctrine-extensions-bundle": "~1.0",
         "doctrine/doctrine-fixtures-bundle": "~2.2.0"
-    },
-    "require-dev": {
-        "sensio/generator-bundle": "~2.4.0"
     },
     "scripts": {
         "post-root-package-install": [
