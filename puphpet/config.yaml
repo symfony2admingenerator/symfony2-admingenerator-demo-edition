@@ -35,7 +35,7 @@ vagrantfile-local:
         synced_folder:
             ujtluz4Tl0ns:
                 source: ./
-                target: /var/www
+                target: /var/www/public_html
                 sync_type: default
                 rsync:
                     args:
@@ -84,7 +84,7 @@ apache:
             servername: www.generator.dev
             serveraliases:
                 - generator.dev
-            docroot: /var/www/web
+            docroot: /var/www/public_html/web
             port: '80'
             setenv:
                 - 'SYMFONY__VAGRANT__ENV generator'
