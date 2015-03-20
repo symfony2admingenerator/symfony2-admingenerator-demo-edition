@@ -36,7 +36,7 @@ vagrantfile-local:
             ujtluz4Tl0ns:
                 source: ./
                 target: /var/www/public_html
-                sync_type: default
+                sync_type: nfs
                 rsync:
                     args:
                         - '--verbose'
