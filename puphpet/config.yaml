@@ -65,11 +65,6 @@ server:
     packages:
         - vim
         - htop
-users_groups:
-    install: '1'
-    groups: {  }
-    users:
-        - 'vagrant:vagrant:www-data'
 firewall:
     install: '1'
     rules: null
