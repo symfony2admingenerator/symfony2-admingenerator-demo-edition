@@ -3,9 +3,9 @@ export SYMFONY__VAGRANT__ENV=generator
 
 VAGRANT_CORE_FOLDER=$(cat "/.puphpet-stuff/vagrant-core-folder.txt")
 
-cd /var/www
+cd /var/www/public_html
 
-if [ ! -d /var/www/app ]; then
+if [ ! -d /var/www/public_html/app ]; then
 	exit
 fi
 
