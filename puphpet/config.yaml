@@ -34,6 +34,8 @@ vagrantfile-local:
                     - '--parser future'
         synced_folder:
             ujtluz4Tl0ns:
+                owner: www-data
+                group: www-data
                 source: ./
                 target: /var/www/public_html
                 sync_type: nfs
@@ -65,6 +67,10 @@ server:
     packages:
         - vim
         - htop
+users_groups:
+    install: '1'
+    groups: {  }
+    users: {  }
 firewall:
     install: '1'
     rules: null
