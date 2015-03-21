@@ -67,10 +67,6 @@ server:
     packages:
         - vim
         - htop
-users_groups:
-    install: '1'
-    groups: {  }
-    users: {  }
 firewall:
     install: '1'
     rules: null
