@@ -103,6 +103,27 @@ apache:
             ssl_key: ''
             ssl_chain: ''
             ssl_certs_dir: ''
+        woespmytykqn:
+            servername: www.generator.dev
+            serveraliases:
+                - generator.dev
+            docroot: /var/www/public_html/web
+            port: '443'
+            setenv:
+                - 'SYMFONY__VAGRANT__ENV generator'
+            override:
+                - All
+            options:
+                - Indexes
+                - FollowSymLinks
+                - MultiViews
+            engine: php
+            custom_fragment: ''
+            ssl: '1'
+            ssl_cert: ''
+            ssl_key: ''
+            ssl_chain: ''
+            ssl_certs_dir: ''
     mod_pagespeed: 0
 nginx:
     install: '0'
@@ -148,6 +169,8 @@ php:
         display_errors: On
         error_reporting: '-1'
         session.save_path: /var/lib/php/session
+        realpath_cache_size: 4096k
+        realpath_cache_ttl: 7200
     timezone: Europe/Paris
     mod_php: '1'
 hhvm:
@@ -163,7 +186,7 @@ hhvm:
         error_reporting: '-1'
     timezone: null
 xdebug:
-    install: '0'
+    install: '1'
     settings:
         xdebug.default_enable: '1'
         xdebug.remote_autostart: '0'
@@ -171,7 +194,7 @@ xdebug:
         xdebug.remote_enable: '1'
         xdebug.remote_handler: dbgp
         xdebug.remote_port: '9000'
-        xdebug.max_nesting_level: '500'
+        xdebug.max_nesting_level: '1000'
 xhprof:
     install: '0'
 drush:
