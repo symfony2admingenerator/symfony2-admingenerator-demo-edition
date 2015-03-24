@@ -12,5 +12,5 @@ fi
 echo 'Dumping assets'
 
 php bin/console assets:install web --symlink
-php bin/console assetic:dump
-php bin/console assetic:dump -e prod
+php bin/console assetic:dump -e=dev
+php bin/console assetic:dump -e=prod
