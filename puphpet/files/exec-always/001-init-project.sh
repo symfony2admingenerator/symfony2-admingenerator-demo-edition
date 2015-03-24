@@ -1,34 +1,11 @@
 #!/bin/bash
-export SYMFONY__VAGRANT__ENV=generator
+PUPPET_DIR=$(cat "/.puphpet-stuff/vagrant-core-folder.txt")
+APP_DIR=/var/www/public_html
+SYMFONY__VAGRANT_ENV=generator
 
-VAGRANT_CORE_FOLDER=$(cat "/.puphpet-stuff/vagrant-core-folder.txt")
-
-cd /var/www/public_html
-
-if [ ! -d /var/www/public_html/app ]; then
-	exit
-fi
-
-echo 'Dumping parameters.yml file'
-cat "${VAGRANT_CORE_FOLDER}"/files/custom/parameters.yml > app/config/parameters.yml
-if [ `whoami` = 'root' ]; then
-    chown vagrant: app/config/parameters.yml
-fi
-
-echo 'Vendors setup'
-sudo composer self-update
-composer install
-
-. "${VAGRANT_CORE_FOLDER}"/files/custom/cache-clear.sh
-. "${VAGRANT_CORE_FOLDER}"/files/custom/assets-install.sh
-
-echo 'Populating DB'
-php bin/console doctrine:schema:drop --force
-php bin/console doctrine:schema:update --force
-php bin/console doctrine:fixtures:load -n
-
-# cd web
-
-# rm -rf images
-# tar -jxvf ../puphpet/files/custom/images.tgz
-# cd ..
+. "${PUPPET_DIR}"/files/dump-paramters.sh
+. "${PUPPET_DIR}"/files/init-temp.sh
+. "${PUPPET_DIR}"/files/composer-install.sh
+. "${PUPPET_DIR}"/files/cache-clear.sh
+. "${PUPPET_DIR}"/files/assets-install.sh
+. "${PUPPET_DIR}"/files/init-database.sh
