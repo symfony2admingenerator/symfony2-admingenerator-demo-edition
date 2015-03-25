@@ -18,5 +18,10 @@ if [ ! -d /tmp/"${SYMFONY__VAGRANT_ENV}"/logs ]; then
 fi
 
 # Setup permissions
-chmod g+ws /tmp/"${SYMFONY__VAGRANT_ENV}"
-chown vagrant:www-data /tmp/"${SYMFONY__VAGRANT_ENV}"
+if [ `whoami` = 'root' ]; then
+	chmod g+ws /tmp/"${SYMFONY__VAGRANT_ENV}" -R
+	chown vagrant:www-data /tmp/"${SYMFONY__VAGRANT_ENV}" -R
+else
+	sudo chmod g+ws /tmp/"${SYMFONY__VAGRANT_ENV}" -R
+	sudo chown vagrant:www-data /tmp/"${SYMFONY__VAGRANT_ENV}" -R
+fi
