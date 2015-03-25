@@ -17,11 +17,4 @@ if [ ! -d /tmp/"${SYMFONY__VAGRANT_ENV}"/logs ]; then
 	mkdir /tmp/"${SYMFONY__VAGRANT_ENV}"/logs
 fi
 
-# Setup permissions
-if [ `whoami` = 'root' ]; then
-	chmod g+ws /tmp/"${SYMFONY__VAGRANT_ENV}" -R
-	chown vagrant:www-data /tmp/"${SYMFONY__VAGRANT_ENV}" -R
-else
-	sudo chmod g+ws /tmp/"${SYMFONY__VAGRANT_ENV}" -R
-	sudo chown vagrant:www-data /tmp/"${SYMFONY__VAGRANT_ENV}" -R
-fi
+. "${PUPPET_DIR}"/files/fix-permissions.sh
