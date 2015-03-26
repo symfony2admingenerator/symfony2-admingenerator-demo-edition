@@ -17,4 +17,8 @@ if [ ! -d /tmp/"${SYMFONY__VAGRANT_ENV}"/logs ]; then
 	mkdir /tmp/"${SYMFONY__VAGRANT_ENV}"/logs
 fi
 
+if [ ! -d /tmp/"${SYMFONY__VAGRANT_ENV}"/sessions ]; then
+	mkdir /tmp/"${SYMFONY__VAGRANT_ENV}"/sessions
+fi
+
 . "${PUPPET_DIR}"/files/fix-permissions.sh
