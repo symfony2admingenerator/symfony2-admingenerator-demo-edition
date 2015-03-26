@@ -16,3 +16,4 @@ parameters:
     debug_redirects: false
     use_assetic_controller: true
     assets_version: 1.0
+    sessions_dir: "/tmp/generator/sessions"
