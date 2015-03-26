@@ -20,3 +20,5 @@ parameters:
 
     assets_version: 1.0
     
+    sessions_dir: "/tmp/generator/sessions"
+    
