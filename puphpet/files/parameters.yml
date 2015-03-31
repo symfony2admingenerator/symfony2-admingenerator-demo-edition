@@ -7,7 +7,8 @@ parameters:
     database_user: udemogen
     database_password: pdemogen
     mailer_transport: smtp
-    mailer_host: 127.0.0.1
+    mailer_host: localhost
+    mailer_port: 1025
     mailer_user: null
     mailer_password: null
     locale: en
