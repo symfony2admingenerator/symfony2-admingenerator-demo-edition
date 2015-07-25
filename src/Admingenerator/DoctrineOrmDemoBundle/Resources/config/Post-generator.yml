@@ -13,6 +13,8 @@ params:
             filterable: 1
         expirationDate:
             filterable: 1
+        tags:
+            formType: s2a_double_list_entity
     object_actions:
         delete: ~
     batch_actions:

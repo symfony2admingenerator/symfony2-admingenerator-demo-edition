@@ -57,6 +57,9 @@ class AppKernel extends Kernel
             new JMS\DiExtraBundle\JMSDiExtraBundle($this),
             new Liuggio\ExcelBundle\LiuggioExcelBundle(),
             new Admingenerator\GeneratorBundle\AdmingeneratorGeneratorBundle(),
+            new Admingenerator\FormBundle\AdmingeneratorFormBundle(),
+            new Admingenerator\FormExtensionsBundle\AdmingeneratorFormExtensionsBundle(),
+
             // S2A Demo deps
             new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
             new Admingenerator\DashboardDemoBundle\AdmingeneratorDashboardDemoBundle(),
