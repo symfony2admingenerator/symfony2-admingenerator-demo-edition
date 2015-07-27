@@ -31,8 +31,8 @@ Installation
 
 * Download and install [composer](https://getcomposer.org/doc/00-intro.md#downloading-the-composer-executable)
 * Clone GeneratorBundle from github: `git clone https://github.com/symfony2admingenerator/symfony2-admingenerator-demo-edition.git`
-* Configure your webserver to point to the web directory
-* install dependencies: `composer.phar install`
-* install and dumping assets: `app/console assetic:dump` and `app/console assets:install`
-* install schemas to database: `app/console doctrine:schema:create`
-* install fixtures: `app/console doctrine:fixtures:load`
+* Configure your webserver to point to the web directory (or run `vagrant up`)
+* install dependencies: `composer install`
+* install and dumping assets: `bin/console assetic:dump` and `bin/console assets:install`
+* install schemas to database: `bin/console doctrine:schema:create`
+* install fixtures: `bin/console doctrine:fixtures:load`
