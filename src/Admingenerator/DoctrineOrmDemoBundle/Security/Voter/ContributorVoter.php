@@ -33,6 +33,6 @@ class ContributorVoter extends Voter
      */
     protected function voteOnAttribute($attribute, $subject, TokenInterface $token)
     {
-        return !true;
+        return true;
     }
 }
