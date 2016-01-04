@@ -317,4 +317,12 @@ class Post
     {
         return $this->expirationDate?clone $this->expirationDate : null;
     }
+
+    /**
+     * @return string
+     */
+    public function __toString()
+    {
+        return $this->getTitle();
+    }
 }

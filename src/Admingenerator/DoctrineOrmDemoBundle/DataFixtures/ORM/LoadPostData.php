@@ -15,7 +15,6 @@ class LoadPostData extends AbstractFixture implements OrderedFixtureInterface
     public function load(ObjectManager $manager)
     {
         $postA = $this->createPost(
-            $manager, 
             'Brasil 2014!',
             '<b>I can\'t wait for Football World Championship in Brasil!<b><br />
              <p>I really hope Ronaldo will lead Portugal into the finals. I\'m so 
@@ -27,7 +26,6 @@ class LoadPostData extends AbstractFixture implements OrderedFixtureInterface
         );
 
         $postB = $this->createPost(
-            $manager, 
             'George Michael\'s new album released!',
             '<p>Finally the long awaited "Symphonica" album is released!
              I\'ll be buying my copy first thing in the morning!</p>',
@@ -38,7 +36,6 @@ class LoadPostData extends AbstractFixture implements OrderedFixtureInterface
         );
 
         $postC = $this->createPost(
-            $manager, 
             'Eminem music is bad for your health',
             '<p>I was listening to Eninem while jogging this morning and then I got hit by a car.
              I love Eminem music, but it\'s bad for my health.</p>',
@@ -54,26 +51,18 @@ class LoadPostData extends AbstractFixture implements OrderedFixtureInterface
         $manager->flush();
     }
 
-    private function createPost(ObjectManager $manager, $title, $content, $date, $published, $categoryName, $tagNames)
+    private function createPost($title, $content, $date, $published, $categoryName, $tagNames)
     {
-        $category = $manager->getRepository('AdmingeneratorDoctrineOrmDemoBundle:Category')->findOneByName($categoryName);
-        $tagsQb = $manager->getRepository('AdmingeneratorDoctrineOrmDemoBundle:Tag')->createQueryBuilder('t');
-        $tags = $tagsQb
-            ->add('where', $tagsQb->expr()->in('t.name', '?1'))
-            ->setParameter(1, $tagNames)
-            ->getQuery()
-            ->getResult();
-
         $post = new Post();
         $post->setTitle($title);
         $post->setCreatedAt(new \DateTime($date));
         $post->setAuthor('John Doe');
         $post->setContent($content);
         $post->setIsPublished($published);
-        $post->setCategory($category);
+        $post->setCategory($this->getReference(sprintf('category_%s', strtolower($categoryName))));
 
-        foreach($tags as $tag) {
-            $post->addTag($tag);
+        foreach($tagNames as $tagName) {
+            $post->addTag($this->getReference(sprintf('tag_%s', strtolower($tagName))));
         }
 
         return $post;

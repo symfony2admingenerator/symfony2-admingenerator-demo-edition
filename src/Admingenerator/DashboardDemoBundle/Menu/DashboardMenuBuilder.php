@@ -3,11 +3,24 @@
 namespace Admingenerator\DashboardDemoBundle\Menu;
 
 use Admingenerator\GeneratorBundle\Menu\AdmingeneratorMenuBuilder;
-use JMS\SecurityExtraBundle\Security\Authorization\Expression\Expression;
 use Knp\Menu\FactoryInterface;
+use Symfony\Component\HttpFoundation\RequestStack;
+use Symfony\Component\Security\Core\Authorization\AuthorizationCheckerInterface;
 
 class DashboardMenuBuilder extends AdmingeneratorMenuBuilder
 {
+    /**
+     * @var AuthorizationCheckerInterface
+     */
+    protected $authorizationChecker;
+
+    public function __construct(FactoryInterface $factory, AuthorizationCheckerInterface $authorizationChecker, RequestStack $requestStack)
+    {
+        parent::__construct($factory, $requestStack, 'admingenerator_demo_welcome');
+
+        $this->authorizationChecker = $authorizationChecker;
+    }
+
     /**
      * Check security expression
      * @param string $expression
@@ -15,17 +28,15 @@ class DashboardMenuBuilder extends AdmingeneratorMenuBuilder
      */
     private function isGranted($expression)
     {
-        return $this->container->get('security.context')->isGranted(array(
-            new Expression($expression)
-        ));
+        return $this->authorizationChecker->isGranted($expression);
     }
     
-    public function navbarMenu(FactoryInterface $factory, array $options)
+    public function navbarMenu(array $options)
     {
-        $menu = $factory->createItem('root');
+        $menu = $this->factory->createItem('root');
         $menu->setChildrenAttributes(array('class' => 'sidebar-menu'));
 
-        if ($dashboardRoute = $this->container->getParameter('admingenerator.dashboard_route')) {
+        if ($dashboardRoute = $this->dashboardRoute) {
             $this
                 ->addLinkRoute($menu, 'admingenerator.dashboard', $dashboardRoute)
                 ->setExtra('icon', 'fa fa-dashboard');
@@ -52,7 +63,7 @@ class DashboardMenuBuilder extends AdmingeneratorMenuBuilder
     
     private function addSecuredMenu($menu)
     {
-        if ($this->isGranted('canSeeSecuredMenu()')) {
+        if ($this->isGranted('ROLE_USER')) {
             $this->addDropdown($menu, 'secured.dropdown');
         }
         

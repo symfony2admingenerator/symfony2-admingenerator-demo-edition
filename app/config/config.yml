@@ -1,14 +1,12 @@
 imports:
-    - { resource: parameters.yml }
-    - { resource: security.yml }
+    - { resource: "parameters.yml" }
+    - { resource: "security.yml" }
 
     # S2A GeneratorBundle
-    - { resource: bundles/admingenerator_generator.yml }
-    - { resource: bundles/knp_menu.yml }
-    - { resource: bundles/jms_di_extra.yml }
-    - { resource: bundles/jms_security_extra.yml }
+    - { resource: "bundles/admingenerator_generator.yml" }
+    - { resource: "bundles/knp_menu.yml" }
     # S2A DemoBundle
-    - { resource: bundles/stof_doctrine_extensions.yml }
+    - { resource: "bundles/stof_doctrine_extensions.yml" }
 
 framework:
     #esi:             ~
@@ -20,21 +18,22 @@ framework:
     form:            ~
     csrf_protection: ~
     validation:      { enable_annotations: true }
+    assets:
+        packages:
+            admingenerator_css:
+              version: 1.0
+              version_format: "%%1$s?v%%2$s"
+            admingenerator_js:
+              version: 1.0
+              version_format: "%%1$s?v%%2$s"
+            formextensions_css:
+              version: 1.0
+              version_format: "%%1$s?v%%2$s"
+            formextensions_js:
+              version: 1.0
+              version_format: "%%1$s?v%%2$s"
     templating:
         engines: ['twig']
-        packages:
-             admingenerator_css:
-                version: 1.0
-                version_format: "%%1$s?v%%2$s"
-             admingenerator_js:
-                version: 1.0
-                version_format: "%%1$s?v%%2$s"
-             formextensions_css:
-                version: 1.0
-                version_format: "%%1$s?v%%2$s"
-             formextensions_js:
-                version: 1.0
-                version_format: "%%1$s?v%%2$s"
     default_locale:  "%locale%"
     trusted_hosts:   ~
     trusted_proxies: ~
@@ -70,7 +69,7 @@ doctrine:
         dbname:   "%database_name%"
         user:     "%database_user%"
         password: "%database_password%"
-        charset:  UTF8
+        charset:  "UTF8"
         # if using pdo_sqlite as your database driver, add the path in parameters.yml
         # e.g. database_path: "%kernel.root_dir%/data/data.db3"
         # path:     "%database_path%"
@@ -85,4 +84,16 @@ swiftmailer:
     host:      "%mailer_host%"
     username:  "%mailer_user%"
     password:  "%mailer_password%"
-    spool:     { type: memory }
+    spool:     { type: "memory" }
+
+services:
+    app.categorizer_voter:
+        class: Admingenerator\DoctrineOrmDemoBundle\Security\Voter\CategorizerVoter
+        tags:
+            - { name: "security.voter" }
+        public: false
+    app.contributor_voter:
+        class: Admingenerator\DoctrineOrmDemoBundle\Security\Voter\ContributorVoter
+        tags:
+            - { name: "security.voter" }
+        public: false

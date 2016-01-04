@@ -9,6 +9,10 @@ params:
     fields:
         author:
             filterable: 1
+        category:
+            filterable: 1
+            filterOn: category.name
+            credentials: CATEGORIZER
         isPublished:
             filterable: 1
         expirationDate:
@@ -21,9 +25,15 @@ builders:
     list:
         params:
             title: post.title.list
-            display: [ author, title, tags, expirationDate ]
+            display: [ author, title, tags, category, expirationDate ]
+            # Customizing filters
+            fields:
+                isPublished:
+                    addFormOptions:
+                        required: false # Stupid sample, just to show how it works
             filters:
                 - author
+                - category
                 - isPublished
             scopes:
                 "First Group":
@@ -51,6 +61,7 @@ builders:
         filetype: ~
     new:
         params:
+            credentials: CONTRIBUTOR
             title: post.title.new
             display:
                 - title
@@ -65,6 +76,9 @@ builders:
                 list: ~
     edit:
         params:
+            fields:
+                author:
+                    credentials: ROLE_USER
             title: post.title.edit
             display:
                 - title

@@ -52,9 +52,6 @@ class AppKernel extends Kernel
             // S2A GeneratorBundle deps
             new Knp\Bundle\MenuBundle\KnpMenuBundle(),
             new WhiteOctober\PagerfantaBundle\WhiteOctoberPagerfantaBundle(),
-            new JMS\AopBundle\JMSAopBundle(),
-            new JMS\SecurityExtraBundle\JMSSecurityExtraBundle(),
-            new JMS\DiExtraBundle\JMSDiExtraBundle($this),
             new Liuggio\ExcelBundle\LiuggioExcelBundle(),
             new Admingenerator\GeneratorBundle\AdmingeneratorGeneratorBundle(),
             // S2A Demo deps

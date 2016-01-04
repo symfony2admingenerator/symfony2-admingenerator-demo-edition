@@ -44,6 +44,8 @@ class LoadCategoryData extends AbstractFixture implements OrderedFixtureInterfac
         $category = new Category();
         $category->setName($name);
 
+        $this->addReference(sprintf('category_%s', strtolower($name)), $category);
+
         return $category;
     }
 

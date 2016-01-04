@@ -1,3 +1,13 @@
 knp_menu:
     twig:
-        template: AdmingeneratorGeneratorBundle:KnpMenu:knp_menu_trans.html.twig
+        template: "AdmingeneratorGeneratorBundle:KnpMenu:knp_menu_trans.html.twig"
+
+services:
+    app.demo_menu_builder:
+        class: Admingenerator\DashboardDemoBundle\Menu\DashboardMenuBuilder
+        arguments:
+            - "@knp_menu.factory"
+            - "@security.authorization_checker"
+            - "@request_stack"
+        tags:
+            - { name: "knp_menu.menu_builder", method: "navbarMenu", alias: "demo_navbar"}
