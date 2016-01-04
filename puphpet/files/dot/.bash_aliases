@@ -51,14 +51,15 @@ alias mv='mv -iv'
 alias grep='grep --color=auto -in'
 alias ..='cd ..'
 
-
+export PUPPET_DIR=$(cat "/.puphpet-stuff/vagrant-core-folder.txt")
+export APP_DIR=/var/www/public_html
 export SYMFONY__VAGRANT__ENV=generator
 
-alias sf='php bin/console'
-alias cdWww='cd /var/www'
-alias initProject='VAGRANT_CORE_FOLDER=$(cat "/.puphpet-stuff/vagrant-core-folder.txt") && . "${VAGRANT_CORE_FOLDER}"/files/exec-always/001-init-project.sh'
-alias cacheClear='VAGRANT_CORE_FOLDER=$(cat "/.puphpet-stuff/vagrant-core-folder.txt") && . "${VAGRANT_CORE_FOLDER}"/files/custom/cache-clear.sh'
-alias assetsInstall='VAGRANT_CORE_FOLDER=$(cat "/.puphpet-stuff/vagrant-core-folder.txt") && . "${VAGRANT_CORE_FOLDER}"/files/custom/assets-install.sh'
-alias cacheClearAndAssetsInstall='cacheClear && assetsInstall && copyCache'
-alias copyCache='rm -rf /var/www/var/cache/* && cp -r /tmp/${SYMFONY__VAGRANT__ENV}/cache/* /var/www/var/cache/'
-
+alias sf='php "${APP_DIR}"/bin/console'
+alias cdApp='cd "${APP_DIR}"'
+alias initApp='. "${PUPPET_DIR}"/files/exec-always/001-init-project.sh'
+alias initTemp='. "${PUPPET_DIR}"/files/init-temp.sh'
+alias cacheClear='. "${PUPPET_DIR}"/files/cache-clear.sh'
+alias assetsInstall='. "${PUPPET_DIR}"/files/assets-install.sh'
+alias copyCache='rm -rf "${APP_DIR}"/cache/* && cp -r /tmp/${SYMFONY__VAGRANT__ENV}/cache/* "${APP_DIR}"/cache/'
+alias copyLogs='rm -rf "${APP_DIR}"/logs/* && cp -r /tmp/${SYMFONY__VAGRANT__ENV}/logs/* "${APP_DIR}"/logs/'
