@@ -2799,17 +2799,17 @@
         },
         {
             "name": "symfony2admingenerator/form-bundle",
-            "version": "v1.2.2",
+            "version": "v1.2.3",
             "target-dir": "Admingenerator/FormBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony2admingenerator/FormBundle.git",
-                "reference": "1cf8de7a44e36221e03f7735d1e1828f875d9b8f"
+                "reference": "8baefc92fdc7244edef5418fef539ace80dc8326"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony2admingenerator/FormBundle/zipball/1cf8de7a44e36221e03f7735d1e1828f875d9b8f",
-                "reference": "1cf8de7a44e36221e03f7735d1e1828f875d9b8f",
+                "url": "https://api.github.com/repos/symfony2admingenerator/FormBundle/zipball/8baefc92fdc7244edef5418fef539ace80dc8326",
+                "reference": "8baefc92fdc7244edef5418fef539ace80dc8326",
                 "shasum": ""
             },
             "require": {
@@ -2848,7 +2848,7 @@
                 }
             ],
             "description": "Twig extension introduceing new blocks to seperate form HTML structure from CSS decorating it and JS enhancing it's functionalities.",
-            "time": "2016-01-04 22:10:36"
+            "time": "2016-01-04 22:58:35"
         },
         {
             "name": "symfony2admingenerator/form-extensions-bundle",

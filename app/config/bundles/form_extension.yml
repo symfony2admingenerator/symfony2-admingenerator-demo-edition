@@ -1,0 +1,4 @@
+admingenerator_form_extensions:
+    include_blueimp: true
+    include_momentjs: true
+    include_jqueryui: true

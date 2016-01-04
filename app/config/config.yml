@@ -7,6 +7,7 @@ imports:
     - { resource: "bundles/knp_menu.yml" }
     # S2A DemoBundle
     - { resource: "bundles/stof_doctrine_extensions.yml" }
+    - { resource: "bundles/form_extension.yml" }
 
 framework:
     #esi:             ~
