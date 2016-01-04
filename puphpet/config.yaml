@@ -34,11 +34,9 @@ vagrantfile-local:
                     - '--parser future'
         synced_folder:
             ujtluz4Tl0ns:
-                owner: www-data
-                group: www-data
                 source: ./
                 target: /var/www/public_html
-                sync_type: default
+                sync_type: nfs
                 rsync:
                     args:
                         - '--verbose'
@@ -86,7 +84,7 @@ apache:
             servername: www.generator.dev
             serveraliases:
                 - generator.dev
-            docroot: /var/www/public_html/web
+            docroot: /var/www/web
             port: '80'
             setenv:
                 - 'SYMFONY__VAGRANT__ENV generator'
@@ -99,27 +97,6 @@ apache:
             engine: php
             custom_fragment: ''
             ssl: '0'
-            ssl_cert: ''
-            ssl_key: ''
-            ssl_chain: ''
-            ssl_certs_dir: ''
-        woespmytykqn:
-            servername: www.generator.dev
-            serveraliases:
-                - generator.dev
-            docroot: /var/www/public_html/web
-            port: '443'
-            setenv:
-                - 'SYMFONY__VAGRANT__ENV generator'
-            override:
-                - All
-            options:
-                - Indexes
-                - FollowSymLinks
-                - MultiViews
-            engine: php
-            custom_fragment: ''
-            ssl: '1'
             ssl_cert: ''
             ssl_key: ''
             ssl_chain: ''
@@ -169,8 +146,6 @@ php:
         display_errors: On
         error_reporting: '-1'
         session.save_path: /var/lib/php/session
-        realpath_cache_size: 4096k
-        realpath_cache_ttl: 7200
     timezone: Europe/Paris
     mod_php: '1'
 hhvm:
@@ -186,7 +161,7 @@ hhvm:
         error_reporting: '-1'
     timezone: null
 xdebug:
-    install: '1'
+    install: '0'
     settings:
         xdebug.default_enable: '1'
         xdebug.remote_autostart: '0'
@@ -194,7 +169,7 @@ xdebug:
         xdebug.remote_enable: '1'
         xdebug.remote_handler: dbgp
         xdebug.remote_port: '9000'
-        xdebug.max_nesting_level: '1000'
+        xdebug.max_nesting_level: '500'
 xhprof:
     install: '0'
 drush:
