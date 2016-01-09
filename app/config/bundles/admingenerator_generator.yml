@@ -11,3 +11,4 @@ admingenerator_generator:
     dashboard_route:	admingenerator_demo_welcome # Make sense only if using the default menu builder
     login_route: admingenerator_demo_welcome
 
+    use_jms_security: false

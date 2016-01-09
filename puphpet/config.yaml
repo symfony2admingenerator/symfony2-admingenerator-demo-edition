@@ -84,7 +84,7 @@ apache:
             servername: www.generator.dev
             serveraliases:
                 - generator.dev
-            docroot: /var/www/web
+            docroot: /var/www/public_html/web
             port: '80'
             setenv:
                 - 'SYMFONY__VAGRANT__ENV generator'
