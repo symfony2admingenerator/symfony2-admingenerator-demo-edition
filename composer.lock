@@ -2852,17 +2852,17 @@
         },
         {
             "name": "symfony2admingenerator/form-extensions-bundle",
-            "version": "v2.0-beta.23",
+            "version": "v2.0-beta.24",
             "target-dir": "Admingenerator/FormExtensionsBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony2admingenerator/FormExtensionsBundle.git",
-                "reference": "dbf06bbab3d73b00898e66c6c191b92fb441a8e5"
+                "reference": "48ff34352c9a73ec0a6c1b45bd4af64e880c11ac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony2admingenerator/FormExtensionsBundle/zipball/dbf06bbab3d73b00898e66c6c191b92fb441a8e5",
-                "reference": "dbf06bbab3d73b00898e66c6c191b92fb441a8e5",
+                "url": "https://api.github.com/repos/symfony2admingenerator/FormExtensionsBundle/zipball/48ff34352c9a73ec0a6c1b45bd4af64e880c11ac",
+                "reference": "48ff34352c9a73ec0a6c1b45bd4af64e880c11ac",
                 "shasum": ""
             },
             "require": {
@@ -2903,7 +2903,7 @@
                 }
             ],
             "description": "Add additional form types to symfony2",
-            "time": "2016-01-06 22:41:19"
+            "time": "2016-01-10 20:25:42"
         },
         {
             "name": "symfony2admingenerator/generator-bundle",
@@ -2911,12 +2911,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony2admingenerator/GeneratorBundle.git",
-                "reference": "ec6e166ec77b1809de9a08d5bf0122df6d94e6d7"
+                "reference": "196ff15dfe44ed5181c36f48a840ce9e574d54a7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony2admingenerator/GeneratorBundle/zipball/ec6e166ec77b1809de9a08d5bf0122df6d94e6d7",
-                "reference": "ec6e166ec77b1809de9a08d5bf0122df6d94e6d7",
+                "url": "https://api.github.com/repos/symfony2admingenerator/GeneratorBundle/zipball/196ff15dfe44ed5181c36f48a840ce9e574d54a7",
+                "reference": "196ff15dfe44ed5181c36f48a840ce9e574d54a7",
                 "shasum": ""
             },
             "require": {
@@ -2972,7 +2972,7 @@
                 "generator",
                 "yaml"
             ],
-            "time": "2016-01-10 22:18:15"
+            "time": "2016-01-10 22:43:02"
         },
         {
             "name": "symfony2admingenerator/twig-generator",
