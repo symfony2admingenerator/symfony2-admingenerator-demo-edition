@@ -53,7 +53,7 @@ class AppKernel extends Kernel
             new Knp\Bundle\MenuBundle\KnpMenuBundle(),
             new WhiteOctober\PagerfantaBundle\WhiteOctoberPagerfantaBundle(),
             new Liuggio\ExcelBundle\LiuggioExcelBundle(),
-            new Admingenerator\GeneratorBundle\AdmingeneratorGeneratorBundle(),
+            new Admingenerator\GeneratorBundle\AdmingeneratorGeneratorBundle($this),
             new Admingenerator\FormBundle\AdmingeneratorFormBundle(),
             new Admingenerator\FormExtensionsBundle\AdmingeneratorFormExtensionsBundle(),
 

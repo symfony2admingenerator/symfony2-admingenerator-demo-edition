@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a1ba863bd2fc6bb043c790fce1e3b4f0",
-    "content-hash": "51b7fc098fdda799dc582bdb5be0c9be",
+    "hash": "137673788ce5f92c12bd9b40796b36a9",
+    "content-hash": "a62a9b407d932e2ec96a4f3dc809762a",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -2857,19 +2857,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony2admingenerator/FormExtensionsBundle.git",
-                "reference": "fd2aa7bd9456c91a36b3905493c42d74adddce5f"
+                "reference": "44b5ed261fb8c9dfcc30bb5b8ca6f9c4fd4dcecb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony2admingenerator/FormExtensionsBundle/zipball/fd2aa7bd9456c91a36b3905493c42d74adddce5f",
-                "reference": "fd2aa7bd9456c91a36b3905493c42d74adddce5f",
+                "url": "https://api.github.com/repos/symfony2admingenerator/FormExtensionsBundle/zipball/44b5ed261fb8c9dfcc30bb5b8ca6f9c4fd4dcecb",
+                "reference": "44b5ed261fb8c9dfcc30bb5b8ca6f9c4fd4dcecb",
                 "shasum": ""
             },
             "require": {
-                "symfony/symfony": ">= 2.7.0",
+                "symfony/symfony": "~2.8|~3.0",
                 "symfony2admingenerator/form-bundle": "~1.0",
                 "twig/extensions": "~1.0",
-                "twig/twig": ">= 1.12.0"
+                "twig/twig": "~1.23"
             },
             "suggest": {
                 "liip/imagine-bundle": "Apply filters on preview images",
@@ -2903,20 +2903,20 @@
                 }
             ],
             "description": "Add additional form types to symfony2",
-            "time": "2015-12-18 08:30:40"
+            "time": "2016-01-10 00:25:10"
         },
         {
             "name": "symfony2admingenerator/generator-bundle",
-            "version": "v2.0-beta43",
+            "version": "dev-feat-28comp",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony2admingenerator/GeneratorBundle.git",
-                "reference": "f29b802f13c69c92b3e1806666e9cb0ecabd2004"
+                "reference": "7fd6ef64b6a0c4d375a59a8c768e903140b67981"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony2admingenerator/GeneratorBundle/zipball/f29b802f13c69c92b3e1806666e9cb0ecabd2004",
-                "reference": "f29b802f13c69c92b3e1806666e9cb0ecabd2004",
+                "url": "https://api.github.com/repos/symfony2admingenerator/GeneratorBundle/zipball/7fd6ef64b6a0c4d375a59a8c768e903140b67981",
+                "reference": "7fd6ef64b6a0c4d375a59a8c768e903140b67981",
                 "shasum": ""
             },
             "require": {
@@ -2924,9 +2924,9 @@
                 "knplabs/knp-menu-bundle": ">1.0,<2.2",
                 "sensio/generator-bundle": "~3.0",
                 "symfony/symfony": "~2.7",
-                "symfony2admingenerator/twig-generator": "~1.1",
+                "symfony2admingenerator/twig-generator": "~1.2",
                 "twig/extensions": "~1.0",
-                "twig/twig": ">= 1.12.0",
+                "twig/twig": "~1.12",
                 "white-october/pagerfanta-bundle": "~1.0"
             },
             "require-dev": {
@@ -2972,25 +2972,25 @@
                 "generator",
                 "yaml"
             ],
-            "time": "2016-01-04 21:08:12"
+            "time": "2016-01-09 23:55:47"
         },
         {
             "name": "symfony2admingenerator/twig-generator",
-            "version": "v1.1.6",
+            "version": "v1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony2admingenerator/TwigGenerator.git",
-                "reference": "06eec98994f77dc2bdcdc1b4a107672ec0492bca"
+                "reference": "69d4f08e91fba51e8a8ef2a3a4d6543e0397cfb5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony2admingenerator/TwigGenerator/zipball/06eec98994f77dc2bdcdc1b4a107672ec0492bca",
-                "reference": "06eec98994f77dc2bdcdc1b4a107672ec0492bca",
+                "url": "https://api.github.com/repos/symfony2admingenerator/TwigGenerator/zipball/69d4f08e91fba51e8a8ef2a3a4d6543e0397cfb5",
+                "reference": "69d4f08e91fba51e8a8ef2a3a4d6543e0397cfb5",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0",
-                "twig/twig": ">=1.1, <2.0-dev"
+                "twig/twig": "~1.12"
             },
             "require-dev": {
                 "phpunit/phpunit": "~4.3"
@@ -3024,7 +3024,7 @@
                 "generator",
                 "twig"
             ],
-            "time": "2016-01-03 20:48:16"
+            "time": "2016-01-09 16:56:37"
         },
         {
             "name": "twig/extensions",

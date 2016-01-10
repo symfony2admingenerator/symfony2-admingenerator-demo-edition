@@ -18,7 +18,7 @@ params:
         expirationDate:
             filterable: 1
         tags:
-            formType: s2a_double_list_entity
+            formType: Admingenerator\FormExtensionsBundle\Form\Type\DoubleListEntityType
     object_actions:
         delete: ~
     batch_actions:

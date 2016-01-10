@@ -18,7 +18,7 @@
         "sensio/distribution-bundle": "~3.0.12",
         "sensio/framework-extra-bundle": "~3.0",
         "incenteev/composer-parameter-handler": "~2.0",
-        "symfony2admingenerator/generator-bundle": "~2.0@dev",
+        "symfony2admingenerator/generator-bundle": "dev-feat-28comp",
         "liuggio/excelbundle": "~2.0",
         "stof/doctrine-extensions-bundle": "~1.0",
         "doctrine/doctrine-fixtures-bundle": "~2.2.0",
