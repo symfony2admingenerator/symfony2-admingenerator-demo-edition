@@ -22,7 +22,7 @@
         "liuggio/excelbundle": "~2.0",
         "stof/doctrine-extensions-bundle": "~1.0",
         "doctrine/doctrine-fixtures-bundle": "~2.2.0",
-        "symfony2admingenerator/form-extensions-bundle": "dev-master"
+        "symfony2admingenerator/form-extensions-bundle": "~2.0-dev"
     },
     "scripts": {
         "post-root-package-install": [

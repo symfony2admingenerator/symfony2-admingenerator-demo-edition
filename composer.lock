@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "137673788ce5f92c12bd9b40796b36a9",
-    "content-hash": "a62a9b407d932e2ec96a4f3dc809762a",
+    "hash": "58fc0c1ff010fa114eb2486fc750a4a3",
+    "content-hash": "3d9f557b74d4f3643273c5a62b0d7d97",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -383,16 +383,16 @@
         },
         {
             "name": "doctrine/dbal",
-            "version": "v2.5.3",
+            "version": "v2.5.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal.git",
-                "reference": "2fbcea96eae34a53183377cdbb0b9bec33974648"
+                "reference": "abbdfd1cff43a7b99d027af3be709bc8fc7d4769"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/dbal/zipball/2fbcea96eae34a53183377cdbb0b9bec33974648",
-                "reference": "2fbcea96eae34a53183377cdbb0b9bec33974648",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/abbdfd1cff43a7b99d027af3be709bc8fc7d4769",
+                "reference": "abbdfd1cff43a7b99d027af3be709bc8fc7d4769",
                 "shasum": ""
             },
             "require": {
@@ -450,7 +450,7 @@
                 "persistence",
                 "queryobject"
             ],
-            "time": "2015-12-25 16:28:24"
+            "time": "2016-01-05 22:11:12"
         },
         {
             "name": "doctrine/doctrine-bundle",
@@ -851,16 +851,16 @@
         },
         {
             "name": "doctrine/orm",
-            "version": "v2.5.3",
+            "version": "v2.5.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/doctrine2.git",
-                "reference": "d9fc5388f1aa1751a0e148e76b4569bd207338e9"
+                "reference": "bc4ddbfb0114cb33438cc811c9a740d8aa304aab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/d9fc5388f1aa1751a0e148e76b4569bd207338e9",
-                "reference": "d9fc5388f1aa1751a0e148e76b4569bd207338e9",
+                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/bc4ddbfb0114cb33438cc811c9a740d8aa304aab",
+                "reference": "bc4ddbfb0114cb33438cc811c9a740d8aa304aab",
                 "shasum": ""
             },
             "require": {
@@ -875,7 +875,6 @@
             },
             "require-dev": {
                 "phpunit/phpunit": "~4.0",
-                "satooshi/php-coveralls": "dev-master",
                 "symfony/yaml": "~2.3|~3.0"
             },
             "suggest": {
@@ -924,7 +923,7 @@
                 "database",
                 "orm"
             ],
-            "time": "2015-12-25 15:50:05"
+            "time": "2016-01-05 21:34:58"
         },
         {
             "name": "gedmo/doctrine-extensions",
@@ -1150,16 +1149,16 @@
         },
         {
             "name": "knplabs/knp-menu",
-            "version": "v2.1.0",
+            "version": "v2.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/KnpLabs/KnpMenu.git",
-                "reference": "c6ad49933babd06a27b2f962a3469601ec9038b8"
+                "reference": "9917b999a3c3d3901386d60c4888b07679291031"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KnpLabs/KnpMenu/zipball/c6ad49933babd06a27b2f962a3469601ec9038b8",
-                "reference": "c6ad49933babd06a27b2f962a3469601ec9038b8",
+                "url": "https://api.github.com/repos/KnpLabs/KnpMenu/zipball/9917b999a3c3d3901386d60c4888b07679291031",
+                "reference": "9917b999a3c3d3901386d60c4888b07679291031",
                 "shasum": ""
             },
             "require": {
@@ -1168,7 +1167,8 @@
             "require-dev": {
                 "pimple/pimple": "~1.0",
                 "silex/silex": "~1.0",
-                "symfony/phpunit-bridge": "~2.7",
+                "symfony/phpunit-bridge": "~2.7|~3.0",
+                "symfony/routing": "~2.3|~3.0",
                 "twig/twig": "~1.16|~2.0"
             },
             "suggest": {
@@ -1211,7 +1211,7 @@
                 "menu",
                 "tree"
             ],
-            "time": "2015-09-20 08:23:47"
+            "time": "2016-01-08 15:42:54"
         },
         {
             "name": "knplabs/knp-menu-bundle",
@@ -1556,16 +1556,16 @@
         },
         {
             "name": "paragonie/random_compat",
-            "version": "1.1.4",
+            "version": "1.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/paragonie/random_compat.git",
-                "reference": "d762ee5b099a29044603cd4649851e81aa66cb47"
+                "reference": "dd8998b7c846f6909f4e7a5f67fabebfc412a4f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/d762ee5b099a29044603cd4649851e81aa66cb47",
-                "reference": "d762ee5b099a29044603cd4649851e81aa66cb47",
+                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/dd8998b7c846f6909f4e7a5f67fabebfc412a4f7",
+                "reference": "dd8998b7c846f6909f4e7a5f67fabebfc412a4f7",
                 "shasum": ""
             },
             "require": {
@@ -1600,7 +1600,7 @@
                 "pseudorandom",
                 "random"
             ],
-            "time": "2015-12-10 14:48:13"
+            "time": "2016-01-06 13:31:20"
         },
         {
             "name": "phpoffice/phpexcel",
@@ -1814,16 +1814,16 @@
         },
         {
             "name": "sensio/generator-bundle",
-            "version": "v3.0.4",
+            "version": "v3.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/SensioGeneratorBundle.git",
-                "reference": "e8d4db2fd6cd61e62208bda8f4f629e557f6acef"
+                "reference": "5274eafa251359087230bade2ff35dd6cec2e530"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioGeneratorBundle/zipball/e8d4db2fd6cd61e62208bda8f4f629e557f6acef",
-                "reference": "e8d4db2fd6cd61e62208bda8f4f629e557f6acef",
+                "url": "https://api.github.com/repos/sensiolabs/SensioGeneratorBundle/zipball/5274eafa251359087230bade2ff35dd6cec2e530",
+                "reference": "5274eafa251359087230bade2ff35dd6cec2e530",
                 "shasum": ""
             },
             "require": {
@@ -1862,7 +1862,7 @@
                 }
             ],
             "description": "This bundle generates code for you",
-            "time": "2015-12-28 16:09:21"
+            "time": "2016-01-05 16:30:36"
         },
         {
             "name": "sensiolabs/security-checker",
@@ -2799,23 +2799,23 @@
         },
         {
             "name": "symfony2admingenerator/form-bundle",
-            "version": "v1.2.3",
+            "version": "v1.3.0",
             "target-dir": "Admingenerator/FormBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony2admingenerator/FormBundle.git",
-                "reference": "8baefc92fdc7244edef5418fef539ace80dc8326"
+                "reference": "af383968ac59e1d99311fe7a9b13e38277dc2ee7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony2admingenerator/FormBundle/zipball/8baefc92fdc7244edef5418fef539ace80dc8326",
-                "reference": "8baefc92fdc7244edef5418fef539ace80dc8326",
+                "url": "https://api.github.com/repos/symfony2admingenerator/FormBundle/zipball/af383968ac59e1d99311fe7a9b13e38277dc2ee7",
+                "reference": "af383968ac59e1d99311fe7a9b13e38277dc2ee7",
                 "shasum": ""
             },
             "require": {
                 "symfony/symfony": ">= 2.2.0",
                 "twig/extensions": "~1.0",
-                "twig/twig": ">= 1.9.0"
+                "twig/twig": "~1.12"
             },
             "suggest": {
                 "symfony2admingenerator/form-extensions-bundle": "Symfony2 form extensions for Admingenerator project (also working standalone!)",
@@ -2848,21 +2848,21 @@
                 }
             ],
             "description": "Twig extension introduceing new blocks to seperate form HTML structure from CSS decorating it and JS enhancing it's functionalities.",
-            "time": "2016-01-04 22:58:35"
+            "time": "2016-01-06 20:09:12"
         },
         {
             "name": "symfony2admingenerator/form-extensions-bundle",
-            "version": "dev-master",
+            "version": "v2.0-beta.23",
             "target-dir": "Admingenerator/FormExtensionsBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony2admingenerator/FormExtensionsBundle.git",
-                "reference": "44b5ed261fb8c9dfcc30bb5b8ca6f9c4fd4dcecb"
+                "reference": "dbf06bbab3d73b00898e66c6c191b92fb441a8e5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony2admingenerator/FormExtensionsBundle/zipball/44b5ed261fb8c9dfcc30bb5b8ca6f9c4fd4dcecb",
-                "reference": "44b5ed261fb8c9dfcc30bb5b8ca6f9c4fd4dcecb",
+                "url": "https://api.github.com/repos/symfony2admingenerator/FormExtensionsBundle/zipball/dbf06bbab3d73b00898e66c6c191b92fb441a8e5",
+                "reference": "dbf06bbab3d73b00898e66c6c191b92fb441a8e5",
                 "shasum": ""
             },
             "require": {
@@ -2903,7 +2903,7 @@
                 }
             ],
             "description": "Add additional form types to symfony2",
-            "time": "2016-01-10 00:25:10"
+            "time": "2016-01-06 22:41:19"
         },
         {
             "name": "symfony2admingenerator/generator-bundle",
@@ -2911,12 +2911,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony2admingenerator/GeneratorBundle.git",
-                "reference": "7fd6ef64b6a0c4d375a59a8c768e903140b67981"
+                "reference": "ec6e166ec77b1809de9a08d5bf0122df6d94e6d7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony2admingenerator/GeneratorBundle/zipball/7fd6ef64b6a0c4d375a59a8c768e903140b67981",
-                "reference": "7fd6ef64b6a0c4d375a59a8c768e903140b67981",
+                "url": "https://api.github.com/repos/symfony2admingenerator/GeneratorBundle/zipball/ec6e166ec77b1809de9a08d5bf0122df6d94e6d7",
+                "reference": "ec6e166ec77b1809de9a08d5bf0122df6d94e6d7",
                 "shasum": ""
             },
             "require": {
@@ -2924,7 +2924,7 @@
                 "knplabs/knp-menu-bundle": ">1.0,<2.2",
                 "sensio/generator-bundle": "~3.0",
                 "symfony/symfony": "~2.7",
-                "symfony2admingenerator/twig-generator": "~1.2",
+                "symfony2admingenerator/twig-generator": "~1.2,>=1.2.2",
                 "twig/extensions": "~1.0",
                 "twig/twig": "~1.12",
                 "white-october/pagerfanta-bundle": "~1.0"
@@ -2972,20 +2972,20 @@
                 "generator",
                 "yaml"
             ],
-            "time": "2016-01-09 23:55:47"
+            "time": "2016-01-10 22:18:15"
         },
         {
             "name": "symfony2admingenerator/twig-generator",
-            "version": "v1.2.0",
+            "version": "v1.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony2admingenerator/TwigGenerator.git",
-                "reference": "69d4f08e91fba51e8a8ef2a3a4d6543e0397cfb5"
+                "reference": "3fc39e5105e03c55cba6c2da5dd22f8fddaad834"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony2admingenerator/TwigGenerator/zipball/69d4f08e91fba51e8a8ef2a3a4d6543e0397cfb5",
-                "reference": "69d4f08e91fba51e8a8ef2a3a4d6543e0397cfb5",
+                "url": "https://api.github.com/repos/symfony2admingenerator/TwigGenerator/zipball/3fc39e5105e03c55cba6c2da5dd22f8fddaad834",
+                "reference": "3fc39e5105e03c55cba6c2da5dd22f8fddaad834",
                 "shasum": ""
             },
             "require": {
@@ -3024,7 +3024,7 @@
                 "generator",
                 "twig"
             ],
-            "time": "2016-01-09 16:56:37"
+            "time": "2016-01-10 21:34:00"
         },
         {
             "name": "twig/extensions",

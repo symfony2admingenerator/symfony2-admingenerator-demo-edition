@@ -13,6 +13,7 @@ params:
             filterable: 1
             filterOn: category.name
             credentials: CATEGORIZER
+            formType: Admingenerator\FormExtensionsBundle\Form\Type\Select2EntityType
         isPublished:
             filterable: 1
         expirationDate:
