@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "4fede5df62ee87f6f12c126c09c05743",
-    "content-hash": "874aa83007e1aa7c4064ebd3ab265468",
+    "hash": "88c97c7e6662980bd5276900a8d17484",
+    "content-hash": "fc2f15974be87568c8c6e813fb3eb06e",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -620,7 +620,7 @@
         },
         {
             "name": "doctrine/doctrine-fixtures-bundle",
-            "version": "dev-master",
+            "version": "2.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/DoctrineFixturesBundle.git",
@@ -2624,22 +2624,22 @@
         },
         {
             "name": "symfony2admingenerator/form-extensions-bundle",
-            "version": "v2.0-beta.24",
+            "version": "v2.0",
             "target-dir": "Admingenerator/FormExtensionsBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony2admingenerator/FormExtensionsBundle.git",
-                "reference": "48ff34352c9a73ec0a6c1b45bd4af64e880c11ac"
+                "reference": "f92d99b47f273e90260f30fac2ab4df10bb51a77"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony2admingenerator/FormExtensionsBundle/zipball/48ff34352c9a73ec0a6c1b45bd4af64e880c11ac",
-                "reference": "48ff34352c9a73ec0a6c1b45bd4af64e880c11ac",
+                "url": "https://api.github.com/repos/symfony2admingenerator/FormExtensionsBundle/zipball/f92d99b47f273e90260f30fac2ab4df10bb51a77",
+                "reference": "f92d99b47f273e90260f30fac2ab4df10bb51a77",
                 "shasum": ""
             },
             "require": {
                 "symfony/symfony": "~2.8|~3.0",
-                "symfony2admingenerator/form-bundle": "~1.0",
+                "symfony2admingenerator/form-bundle": "~1.3",
                 "twig/extensions": "~1.0",
                 "twig/twig": "~1.23"
             },
@@ -2675,20 +2675,20 @@
                 }
             ],
             "description": "Add additional form types to symfony2",
-            "time": "2016-01-10 20:25:42"
+            "time": "2016-01-30 15:37:45"
         },
         {
             "name": "symfony2admingenerator/generator-bundle",
-            "version": "dev-feat-28comp",
+            "version": "v2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony2admingenerator/GeneratorBundle.git",
-                "reference": "a956e117ebedc3f18d9396999a46a58bda8818b1"
+                "reference": "c6a99841db44f33622249d98b43da386c3f91b1e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony2admingenerator/GeneratorBundle/zipball/a956e117ebedc3f18d9396999a46a58bda8818b1",
-                "reference": "a956e117ebedc3f18d9396999a46a58bda8818b1",
+                "url": "https://api.github.com/repos/symfony2admingenerator/GeneratorBundle/zipball/c6a99841db44f33622249d98b43da386c3f91b1e",
+                "reference": "c6a99841db44f33622249d98b43da386c3f91b1e",
                 "shasum": ""
             },
             "require": {
@@ -2702,8 +2702,8 @@
                 "white-october/pagerfanta-bundle": "~1.0"
             },
             "require-dev": {
-                "doctrine/dbal": ">=2.2.3,<2.5-dev",
-                "doctrine/orm": ">=2.2.3,<2.5-dev",
+                "doctrine/dbal": ">=2.2.3",
+                "doctrine/orm": ">=2.2.3",
                 "phpunit/phpunit": "~4.3"
             },
             "suggest": {
@@ -2744,7 +2744,7 @@
                 "generator",
                 "yaml"
             ],
-            "time": "2016-01-30 15:51:23"
+            "time": "2016-01-30 16:28:59"
         },
         {
             "name": "symfony2admingenerator/twig-generator",
@@ -2966,11 +2966,8 @@
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "dev",
-    "stability-flags": {
-        "symfony2admingenerator/generator-bundle": 20,
-        "symfony2admingenerator/form-extensions-bundle": 20
-    },
+    "minimum-stability": "stable",
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
