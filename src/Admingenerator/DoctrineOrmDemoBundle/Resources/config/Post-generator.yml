@@ -16,6 +16,7 @@ params:
             formType: Admingenerator\FormExtensionsBundle\Form\Type\Select2EntityType
         isPublished:
             filterable: 1
+            formType: Symfony\Component\Form\Extension\Core\Type\ChoiceType
         expirationDate:
             filterable: 1
         tags:
@@ -74,6 +75,7 @@ builders:
                 - category
                 - content
                 - expirationDate
+                - isPublished
             actions:
                 save: ~
                 list: ~
